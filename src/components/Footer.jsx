@@ -5,7 +5,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-white px-5">
       <div className="grid grid-cols-4 mt-4 border-t-2 pt-14 ">
         <div className="text-[14px]">
           <h2 className="font-bold text-[16px] mb-8">Contact Us</h2>
@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
 
       <hr className="my-10" />
-      <div className="flex justify-between mb-8">
+      <div className="flex justify-between pb-4">
         <p>© 2024 Medirent Services. All Rights Reserved</p>
         <div className="flex gap-2 text-[#666]">
           <p>We use safe payment from</p>

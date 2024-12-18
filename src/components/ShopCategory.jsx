@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Slider = () => {
+const ShopCategory = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
   // Images and their titles
@@ -92,4 +92,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default ShopCategory;
