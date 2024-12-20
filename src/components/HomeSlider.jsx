@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+// import React from "react";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { TbTruck } from "react-icons/tb";
 import { MdPayment } from "react-icons/md";
