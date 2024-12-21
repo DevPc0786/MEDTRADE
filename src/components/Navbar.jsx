@@ -1,21 +1,25 @@
 import React from 'react'
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Navbar() {
   return (
     <div>
       <div className='bg-blue-400 py-4 flex justify-between'>
         <div className=" text-lg font-bold text-white">
-         <h1>MyWebsite  |</h1>
+         <h1 className='ml-4'>amityatul@gmail.com | +91 80766 03020</h1>
         </div>
         <div className=" text-lg font-bold text-white">
-         <h1>links</h1>
+        <p className="text-white flex gap-3 mr-4 text-2xl">
+              <FaInstagram />
+              <FaFacebook />
+            </p>
         </div>
 
       </div>
     <nav className="bg-blue-900 text-white shadow-md">
   <div className="flex items-center justify-between px-6 py-4">
     <div className="text-xl font-bold">
-      <a href="/">MyWebsite</a>
+      <a href="/">Medtrade System</a>
     </div>
     <ul className="hidden md:flex space-x-6 text-blue-300  font-4xl">
       <li>

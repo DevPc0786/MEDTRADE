@@ -10,7 +10,7 @@ const ShopCategory = () => {
     { url: "https://images.jdmagicbox.com/quickquotes/images_main/portable-ultra-light-medical-oxygen-cylinder-1579liters-2023405253-4x6cig9y.jpg", title: "Oxygen Cylinder" },
     { url: "https://5.imimg.com/data5/MX/DU/HA/SELLER-56499314/walking-aids.jpg", title: "Walking Aids" },
     { url: "https://static.dezeen.com/uploads/2018/01/kimono-patient-gowns-care-wear-design-health-products_dezeen_sq-4.jpg", title: "Patient Cloth" },
-    { url: "https://via.placeholder.com/196", title: "Product 6" },
+    { url: "https://m.media-amazon.com/images/I/71GCFvMAIyL.jpg", title: "Product 6" },
     { url: "https://via.placeholder.com/196", title: "Product 7" },
     { url: "https://via.placeholder.com/196", title: "Product 8" },
     { url: "https://via.placeholder.com/196", title: "Product 9" },
@@ -23,7 +23,7 @@ const ShopCategory = () => {
 
   return (
 
-    <div className="w-full mt-8">
+    <div className="w-full bg-white mt-8 py-7">
       {/* Slider Container */}
       <h2 className="text-2xl mx-4 my-2">Shop By Category</h2>
       <div className="w-full overflow-hidden">
