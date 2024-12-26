@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 export default function Navbar() {
   return (
     <div>
-      <div className='bg-blue-400 py-4 flex justify-between'>
+      {/* <div className='bg-blue-400 py-4 flex justify-between'>
         <div className=" text-lg font-bold text-white">
          <h1 className='ml-4'>amityatul@gmail.com | +91 80766 03020</h1>
         </div>
@@ -15,13 +15,19 @@ export default function Navbar() {
             </p>
         </div>
 
-      </div>
+      </div> */}
     <nav className="bg-blue-900 text-white shadow-md">
-  <div className="flex items-center justify-between px-6 py-4">
-    <div className="text-xl font-bold">
-      <a href="/">Medtrade System</a>
+  
+  <div className="flex items-center justify-between px-6 py-3">
+    <div className="items-center gap-2 flex ">
+      <img src="https://png.pngtree.com/png-vector/20240418/ourmid/pngtree-gaming-logo-modern-style-design-png-image_12295068.png" alt="Logo" className="h-12 w-12" />
+      <a className="text-xl flex font-bold text-white" href="/">Medtrade System</a>
     </div>
-    <ul className="hidden md:flex space-x-6 text-blue-300  font-4xl">
+     <div id='btn'>
+       <button>Call Us</button>
+     </div>
+  
+    <ul className="hidden md:flex space-x-6 text-blue-300  mr-4 font-4xl">
       <li>
         <a href="/" className="hover:text-blue-400 transition duration-300 ease-in-out">Home</a>
       </li>
