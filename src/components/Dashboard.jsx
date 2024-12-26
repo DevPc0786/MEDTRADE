@@ -9,14 +9,12 @@ import ProductCard from "./ProductCard";
 const Dashboard = () => {
   return (
     <div>
-      <Navbar />
       <div className="px-5 py-3">
         <Home />
         <ProductCard />
         {/* <ShopCategory /> */}
         <Healthconcern />
       </div>
-      <Footer className="p-5"/>
     </div>
   );
 };
