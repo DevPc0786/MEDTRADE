@@ -79,4 +79,12 @@ export const products = [
     images:
       "https://www.jiomart.com/images/product/original/rvnb8yvpxx/antiseptic-cream-15-grm-pack-of-3-product-images-orvnb8yvpxx-p601750032-1-202305241313.jpg?im=Resize=(420,420)",
   },
+  {
+    name: "Antiseptic Cream",
+    price: "90",
+    dis_price: "110",
+    rating: "4.3",
+    images:
+      "https://www.jiomart.com/images/product/original/rvnb8yvpxx/antiseptic-cream-15-grm-pack-of-3-product-images-orvnb8yvpxx-p601750032-1-202305241313.jpg?im=Resize=(420,420)",
+  },
 ];
