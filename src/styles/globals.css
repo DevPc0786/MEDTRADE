@@ -5,6 +5,10 @@
 :root {
   --background: #eeeeee;
   --foreground: #171717;
+  --btncolor: #61A4E9;
+  --graytext: rgb(102 102 102 / var(--tw-text-opacity, 1));
+  --blacktext: black;
+  --whitetext: white;
 }
 
 /* @media (prefers-color-scheme: dark) {

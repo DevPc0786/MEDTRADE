@@ -9,7 +9,7 @@ import ProductCard from "./ProductCard";
 const Dashboard = () => {
   return (
     <div>
-      <div className="px-5 py-3">
+      <div>
         <Home />
         <ProductCard />
         {/* <ShopCategory /> */}

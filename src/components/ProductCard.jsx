@@ -6,14 +6,14 @@ import { IoCallOutline } from "react-icons/io5";
 const ProductCard = () => {
     return (
       <div>
-        <h2 className="mx-8 mt-9 font-bold tracking-wide text-xl">
+        <h2 className="mx-8 mt-10  font-bold tracking-wide text-xl">
           Medician
         </h2>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {products.map((item, i) => (
             <div
               key={i}
-              className="relative m-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md "
+              className="relative flex w-full my-2 m-auto max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md "
             >
               <a
                 className="relative mx-3 mt-3 flex h-52 overflow-hidden rounded-xl items-center"
@@ -48,7 +48,7 @@ const ProductCard = () => {
                 </div>
                 <a
                   href="#"
-                  className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:text-slate-900 border hover:bg-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                  className="flex items-center justify-center rounded-md bg-[--btncolor] px-5 py-2.5 text-center text-sm font-medium text-white hover:text-slate-900 border hover:bg-white focus:outline-none focus:ring-4 focus:ring-blue-300"
                 >
                   <IoCallOutline className="mr-2 h-6 w-6" />
                   View number
@@ -56,7 +56,7 @@ const ProductCard = () => {
 
                 <a
                   href="#"
-                  className="flex items-center justify-center rounded-md hover:bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-slate-900 hover:text-white border mt-2  focus:outline-none focus:ring-4 focus:ring-blue-300"
+                  className="flex items-center justify-center rounded-md hover:bg-[--btncolor] px-5 py-2.5 text-center text-sm font-medium text-slate-900 hover:text-white border mt-2  focus:outline-none focus:ring-4 focus:ring-blue-300"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
