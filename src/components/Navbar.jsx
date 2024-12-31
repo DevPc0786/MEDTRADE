@@ -52,10 +52,10 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="/services"
+                href="/products"
                 className="hover:text-blue-400 transition duration-300 ease-in-out"
               >
-                Services
+                Product
               </a>
             </li>
             <li>
