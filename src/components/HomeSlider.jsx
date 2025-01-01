@@ -27,79 +27,17 @@ const HomeSlider = () => {
 
   return (
     <div>
-      <div className="flex mt-5 bg-white">
-        <div className="w-[70%] h-[550px]">
-          <div className="">
-            <div className="slider-container">
-              <Slider {...settings}>
-                {images.map((image, index) => (
-                  <div key={index}>
-                    <img
-                      src={image}
-                      alt={`Slide ${index + 1}`}
-                      style={{ width: "100%", height: "465px" }}
-                    />
-                  </div>
-                ))}
-              </Slider>
-            </div>
-
-            <div className="pb-5 h-full">
-              <div className="flex justify-between p-4">
-                <div className="flex items-center gap-3">
-                  <FaRegThumbsUp color="#28AFB1" size={35} />
-                  <div>
-                    <h2 className="text-md font-semibold line-clamp-1">
-                      Genuine Products
-                    </h2>
-                    <p className="text-sm">Over 25K products</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <TbTruck color="#28AFB1" size={35} />
-                  <div>
-                    <h2 className="text-md font-semibold line-clamp-1">
-                      Home Delivery
-                    </h2>
-                    <p className="text-sm">Over 25K products</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <MdPayment color="#28AFB1" size={35} />
-                  <div>
-                    <h2 className="text-md font-semibold line-clamp-1">
-                      Secure Payment
-                    </h2>
-                    <p className="text-sm">Over 25K products</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <TbMessageCircle color="#28AFB1" size={35} />
-                  <div>
-                    <h2 className="text-md font-semibold line-clamp-1">
-                      24/7 Support
-                    </h2>
-                    <p className="text-sm">Over 25K products</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-[30%] h-[550px] gap-5">
+      <Slider {...settings}>
+        {images.map((image, index) => (
           <img
-            className="w-full h-[50%] pl-5 pb-[0.625rem]"
-            src="https://medirent.co.in/wp-content/uploads/2022/02/banner_mask-1.jpg"
-            alt="Banner Image"
+            key={index}
+            src={image}
+            alt={`Slide ${index + 1}`}
+            className="lg:h-screen h-60"
+            style={{ width: "100%", height: "100%" }}
           />
-          <img
-            className="w-full h-[50%] pl-5 pt-[0.625rem]"
-            src="https://medirent.co.in/wp-content/uploads/2022/02/coccyx-cushion_banner-1.jpg"
-            alt="Banner Image"
-          />
-        </div>
-      </div>
+        ))}
+      </Slider>
     </div>
   );
 };
