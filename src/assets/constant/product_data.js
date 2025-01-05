@@ -6,7 +6,7 @@ export const products = [
     dis_price: "350",
     rating: "4.0",
     images:
-      "https://www.jiomart.com/images/product/original/rvxtfzt1kk/genone-e-gen-400-vitamin-e-capsule-for-glowing-face-skin-and-hair-nutrition-30-capsules-product-images-orvxtfzt1kk-p600972324-0-202304271114.jpg?im=Resize=(420,420)",
+      "public\img\WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
   },
   {
     name: "Paracetamol Tablet",
@@ -14,7 +14,7 @@ export const products = [
     dis_price: "70",
     rating: "4.5",
     images:
-      "https://www.stelonbiotech.com/wp-content/uploads/2022/04/PYREMUST-650-TAB.jpg",
+      "public\img\WhatsApp_Image_2025-01-01_at_12.56.21_8e4d9311-removebg-preview.png",
   },
   {
     name: "Ibuprofen Tablet",
@@ -22,7 +22,7 @@ export const products = [
     dis_price: "120",
     rating: "4.2",
     images:
-      "https://5.imimg.com/data5/SELLER/Default/2023/7/325863554/WI/JM/SY/135658020/ibuprofen-tablets-ip-200-mg-.jpg",
+      "public\img\WhatsApp_Image_2025-01-01_at_12.56.21_d1225401-removebg-preview.png",
   },
   {
     name: "Cough Syrup",
@@ -30,7 +30,7 @@ export const products = [
     dis_price: "220",
     rating: "4.3",
     images:
-      "https://images.apollo247.in/pub/media/catalog/product/b/e/ben0006_2.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%201200w",
+      "public\img\WhatsApp_Image_2025-01-01_at_12.56.22_fe4590a4-removebg-preview.png",
   },
   {
     name: "Calcium Tablet",
@@ -38,7 +38,7 @@ export const products = [
     dis_price: "180",
     rating: "4.1",
     images:
-      "https://images.apollo247.in/pub/media/catalog/product/C/O/COR0649_1_1.jpg",
+      "public\img\WhatsApp_Image_2025-01-01_at_12.56.23_a6b2a4fa-removebg-preview (1).png",
   },
   {
     name: "Vitamin C Tablet",
