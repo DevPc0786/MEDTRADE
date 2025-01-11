@@ -12,10 +12,10 @@ const AboutUs = () => {
             At Meditrade Systems, we aim to bridge the gap between innovation and healthcare. Providing top-quality medical equipment to improve lives.
           </p>
         </div>
-        <div className="absolute inset-0 bg-blue-900 opacity-10">
+        <div className="absolute inset-0 bg-blue-900 opacity-70">
           <Image
-            src="/images/hero-bg.jpg"
-            alt="Background"
+            src="/img/elisabeth-zink-ZA6DgNbXxro-unsplash.jpg"
+            alt=""
             layout="fill"
             objectFit="cover"
             quality={75}
@@ -37,8 +37,8 @@ const AboutUs = () => {
           </div>
           <div>
             <Image
-              src="/images/about-us.jpg"
-              alt="About Meditrade Systems"
+              src="/img/Screenshot (295).png"
+              alt=""
               width={600}
               height={400}
               className="rounded-lg shadow-lg"
@@ -60,7 +60,7 @@ const AboutUs = () => {
           </div>
           <div>
             <Image
-              src="/images/about-us.jpg"
+              src="/img/elisabath.jpg"
               alt="About Meditrade Systems"
               width={600}
               height={400}

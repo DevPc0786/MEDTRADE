@@ -6,7 +6,7 @@ export const products = [
     dis_price: "350",
     rating: "4.0",
     images:
-      "public\img\WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
   },
   {
     name: "Paracetamol Tablet",
@@ -14,7 +14,7 @@ export const products = [
     dis_price: "70",
     rating: "4.5",
     images:
-      "public\img\WhatsApp_Image_2025-01-01_at_12.56.21_8e4d9311-removebg-preview.png",
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.21_8e4d9311-removebg-preview.png",
   },
   {
     name: "Ibuprofen Tablet",
@@ -22,7 +22,7 @@ export const products = [
     dis_price: "120",
     rating: "4.2",
     images:
-      "public\img\WhatsApp_Image_2025-01-01_at_12.56.21_d1225401-removebg-preview.png",
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.21_d1225401-removebg-preview.png",
   },
   {
     name: "Cough Syrup",
@@ -30,7 +30,7 @@ export const products = [
     dis_price: "220",
     rating: "4.3",
     images:
-      "public\img\WhatsApp_Image_2025-01-01_at_12.56.22_fe4590a4-removebg-preview.png",
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.22_fe4590a4-removebg-preview.png",
   },
   {
     name: "Calcium Tablet",
@@ -38,7 +38,7 @@ export const products = [
     dis_price: "180",
     rating: "4.1",
     images:
-      "public\img\WhatsApp_Image_2025-01-01_at_12.56.23_a6b2a4fa-removebg-preview (1).png",
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.23_a6b2a4fa-removebg-preview (1).png",
   },
   {
     name: "Vitamin C Tablet",
