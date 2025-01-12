@@ -1,89 +1,86 @@
 import React from "react";
+import Image from "next/image";
+
 
 const AboutUs = () => {
   return (
     <div className="px-14 py-5 bg-[--whitetext]">
-      <h2 className="text-md font-semibold mb-4 text-[--blacktext]">
-        Medirent Services - India's Leading Home Health Care Company For Medical
-        Equipment Rental and Sale
-      </h2>
-      <p className="text-[--graytext] text-sm mb-5 ">
-        This journey started in 1990 with a vision “to bring happiness in
-        people’s lives by providing healthcare solutions”. It has been our
-        motto, our credo, our guiding star since then. We pioneered the concept
-        of Custom-Made Medical Compression Garments in India under brand NORMA.
-        We pioneered the concept of Back-Care and Seating Solutions in India
-        under brand AMRON. And then in 2007, we pioneered the concept of Home
-        Healthcare in India under brand MEDIRENT.
-      </p>
+        <section className="relative bg-gradient-to-r from-blue-900 to-blue-600 text-white py-20">
+        <div className="container mx-auto text-center px-4">
+          <h1 className="text-4xl font-bold mb-4">About Meditrade Systems</h1>
+          <p className="text-lg max-w-2xl mx-auto">
+            At Meditrade Systems, we aim to bridge the gap between innovation and healthcare. Providing top-quality medical equipment to improve lives.
+          </p>
+        </div>
+        <div className="absolute inset-0 bg-blue-900 opacity-70">
+          <Image
+            src="/img/elisabeth-zink-ZA6DgNbXxro-unsplash.jpg"
+            alt=""
+            layout="fill"
+            objectFit="cover"
+            quality={75}
+            className="z-[-1]"
+          />
+        </div>
+      </section>
+  {/* About Section */}
+  <section className="py-16">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 className="text-3xl font-bold mb-4">Our Story</h2>
+            <p className="text-lg mb-4">
+              Meditrade Systems was founded with a vision to provide reliable and advanced medical equipment to both businesses and individual customers. Over the years, we have partnered with top manufacturers and developed a reputation for quality and trust.
+            </p>
+            <p className="text-lg">
+              We believe in empowering healthcare providers with the tools they need to deliver exceptional care.
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/img/Screenshot (295).png"
+              alt=""
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
 
-      <h2 className="text-md font-semibold mb-1 text-[--blacktext]">
-        Get every medical equipment on time & every time..Saving lives :
-      </h2>
-      <p className="text-[--graytext] text-sm mb-5">
-        Medirent services has taken a revolutionary and innovative step by
-        renting out expensive medical equipment on rent for home use at
-        affordable rentals.
-      </p>
-      <p className="text-[--graytext] text-sm mb-5">
-        Even though medical science can save the patient’s life but proper home
-        care leads to a faster recovery. Care giving techniques often require
-        hi-tech, expensive medical equipment. While many of these types of
-        equipment can help in saving the life of critical patients as it
-        happens, therefore most of these types of equipment are expensive and
-        are generally needed for a few days or weeks, thus, curbing the need of
-        buying them despite of their affordability.{" "}
-      </p>
-      <h2 className="text-md font-semibold mb-1 text-[--blacktext]">
-        Medical Equipment Available at Affordable Rentals also :
-      </h2>
-      <p className="text-[--graytext] text-sm mb-5">
-        Taking this need of mankind into consideration, Medirent Services has
-        emerged as a “Category definer” and has started renting out expensive
-        medical equipment for home use at affordable rentals. Equipment like
-        Hospital Bed on Rent, Wheelchair on Rent, Bipap Machine on Rent, Oxygen
-        Concentrator on Rent, Cylinder on rent, Ventilator on rent etc. All the
-        equipment are also available for sale as per the need of patients and
-        caregivers. Medirent also offers home care services like
-        Nursing/Attendant services, Home-dressing services, Home-based sleep
-        studies, and Buyback options for used medical equipment.
-      </p>
-      <h2 className="text-md font-semibold mb-1 text-[--blacktext]">
-        Nursing & Homecare attendant services with dedicated Patient Counseling
-        Team
-      </h2>
+      <section className="py-16">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 className="text-3xl font-bold mb-4">Our Story</h2>
+            <p className="text-lg mb-4">
+              Meditrade Systems was founded with a vision to provide reliable and advanced medical equipment to both businesses and individual customers. Over the years, we have partnered with top manufacturers and developed a reputation for quality and trust.
+            </p>
+            <p className="text-lg">
+              We believe in empowering healthcare providers with the tools they need to deliver exceptional care.
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/img/elisabath.jpg"
+              alt="About Meditrade Systems"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
 
-      <p className="text-[--graytext] text-sm mb-5">
-        Through our nursing & homecare attendant services, we provide attendants
-        for assisting with ADLs (Toileting, Bathing, Dressing, Eating &
-        Mobility), ANMs & GNM/nurses for rehabilitation education and practice
-        (as per guidelines of Doctor), ADL Support, oral and parental drug
-        delivery support and monitoring all vital parameters of critically ill
-        patients. Professionally trained attendants for patients as well as
-        elderly care are available at home. A professionally trained
-        Physiotherapist for home visits is also available.
-      </p>
+ {/* Mission Statement */}
+ <section className="bg-gray-100 py-16 text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+          <p className="text-lg max-w-2xl mx-auto">
+            To make quality medical products accessible to everyone and contribute to a healthier world. With innovation and integrity at our core, we strive to be a trusted partner in healthcare.
+          </p>
+        </div>
+      </section>
 
-      <h2 className="text-md font-semibold mb-1 text-[--blacktext]">
-        Ensuring Quality Services:
-      </h2>
-      <p className="text-[--graytext] text-sm mb-5">
-        We are an ISO 9001:2008 certified company thus the services provided by
-        us are standard & up to the mark. Medirent Services has come up with
-        variety of products and services. Explore the widest range starting from
-        respiratory care to foot care.
-      </p>
 
-      <h2 className="text-md font-semibold mb-1 text-[--blacktext]">
-        Continue to serve you the best...
-      </h2>
-      <p className="text-[--graytext] text-sm mb-5">
-        Over the last 15 years, Medirent has served lakhs of patients and
-        caregivers across India through various channels. The habit of providing
-        good quality products at affordable prices backed by delightful services
-        has won the hearts of innumerable families who constitute our most
-        committed clients.
-      </p>
     </div>
   );
 };
