@@ -88,3 +88,129 @@ export const products = [
       "https://www.jiomart.com/images/product/original/rvnb8yvpxx/antiseptic-cream-15-grm-pack-of-3-product-images-orvnb8yvpxx-p601750032-1-202305241313.jpg?im=Resize=(420,420)",
   },
 ];
+
+export const chairs = [
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+];
+
+export const healthCare = [
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    name: "Vitamin E Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+];

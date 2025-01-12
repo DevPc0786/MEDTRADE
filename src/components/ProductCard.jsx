@@ -12,7 +12,7 @@ const ProductCard = ({item, setModel}) => {
        
         <div>
             <div
-              className="relative flex w-full my-2 m-auto max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md "
+              className="relative flex w-full my-4 m-auto max-w-[17rem] flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg "
             >
               <a
                 className="relative mx-3 mt-3 flex h-52 overflow-hidden rounded-xl items-center"
