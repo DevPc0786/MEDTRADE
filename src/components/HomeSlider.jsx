@@ -7,39 +7,22 @@ import { TbMessageCircle } from "react-icons/tb";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const HomeSlider = () => {
-  const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
-
-  const images = [
-    "https://medirent.co.in/wp-content/uploads/2022/02/banner1-1.jpg",
-    "https://medirent.co.in/wp-content/uploads/2022/02/banner1.jpg",
-  ];
-
+export default function Home() {
   return (
-    <div>
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Slide ${index + 1}`}
-            className="lg:h-screen h-60"
-            style={{ width: "100%", height: "100%" }}
-          />
-        ))}
-      </Slider>
+    <div className="home-page relative w-full h-screen overflow-hidden">
+      <video 
+        src="/videoo.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        Your browser does not support the video tag.
+      </video>
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white">
+     
+      </div>
     </div>
   );
-};
-
-export default HomeSlider;
+}
