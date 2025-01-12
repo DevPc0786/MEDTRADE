@@ -6,7 +6,7 @@ import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-white px-5">
-      <div className="grid lg:grid-cols-4 grid-cols-1 mt-4 border-t-2 pt-14 ">
+      <div className="grid lg:grid-cols-3 grid-cols-1 mt-4 border-t-2 pt-14 ">
         <div className="text-[14px]">
           <h2 className="font-bold text-[16px] lg:mb-8 mb-2 ">Contact Us</h2>
           <div className="text-[--graytext]">
@@ -23,22 +23,23 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-[14px]">
-          <h2 className="font-bold text-[16px] lg:mb-8 mt-5 lg:mt-0 ">Medirent Bussiness</h2>
+          <h2 className="font-bold text-[16px] lg:mb-8 mt-5 lg:mt-0 ">
+            Medirent Bussiness
+          </h2>
           <div className="text-[--graytext]">
             <div>
-              <p className="my-2">About Us</p>
-              <p className="my-2">Privacy Policy </p>
-              <p className="my-2">Terms & Conditions </p>
-              <p className="my-2">Shipping Policy </p>
-              <p className="my-2">Return Policy</p>
-              <p className="my-2">HO Location</p>
+              <ul>
+                <li className="my-2 cursor-pointer"><a href="/about"> About Us </a></li>
+                <li className="my-2 cursor-pointer"><a href="/contact"> Contact Us  </a></li>
+                <li className="my-2 cursor-pointer"><a href="/products"> All Product </a></li>
+                <li className="my-2 cursor-pointer"><a href=""> Privacy Policy  </a></li>
+                <li className="my-2 cursor-pointer"><a href=""> Terms & Conditions  </a></li>
+                {/* <li className="my-2 cursor-pointer"><a href=""> Return Policy </a></li> */}
+              </ul>
             </div>
           </div>
         </div>
-        <div className="text-[14px]">
-          <h2 className="font-bold text-[16px] lg:mb-8 mt-2 lg:mt-0">Company</h2>
-          <p className="text-[--graytext]">About Us</p>
-        </div>
+      
         <div className="text-[14px]">
           <h2 className="font-bold text-[16px] lg:mb-8 mt-2 lg:mt-0">
             Join Medirent Wellness Club

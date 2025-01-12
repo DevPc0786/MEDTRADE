@@ -21,7 +21,9 @@ const CallbackForm = ({ closeModel }) => {
          (error) => {
            console.log("FAILED...", error.text);
          }
-       );
+     );
+     form.current.reset();
+     closeModel(true);
   };
   
   return (

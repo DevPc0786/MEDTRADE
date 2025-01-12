@@ -4,25 +4,15 @@ import { IoCallOutline } from "react-icons/io5";
 import CallbackForm from "./CallbackForm";
 
 
-const ProductCard = () => {
+const ProductCard = ({item, setModel}) => {
 
-    const [model, setModel] = useState(false);
-  
-      const closeModel = () => {
-          setModel(false);
-          console.log("close model");
-      }
    
     return (
       <div>
-        <h2 className="mx-8 mt-10  font-bold tracking-wide text-xl">
-          Medician
-        </h2>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {products.map((item, i) => (
+       
+        <div>
             <div
-              key={i}
-              className="relative flex w-full my-2 m-auto max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md "
+              className="relative flex w-full my-4 m-auto max-w-[17rem] flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg "
             >
               <a
                 className="relative mx-3 mt-3 flex h-52 overflow-hidden rounded-xl items-center"
@@ -100,10 +90,8 @@ const ProductCard = () => {
 
               </div>
             </div>
-          ))}
         </div>
 
-        {model && <CallbackForm closeModel={closeModel} />}
       </div>
     );
 };
