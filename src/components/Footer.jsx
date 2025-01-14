@@ -2,6 +2,7 @@ import React from "react";
 import { TiSocialFacebook } from "react-icons/ti";
 import { IoLogoTwitter } from "react-icons/io5";
 import { FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,12 +12,12 @@ const Footer = () => {
           <h2 className="font-bold text-[16px] lg:mb-8 mb-2 ">Contact Us</h2>
           <div className="text-[--graytext]">
             <p>Call us 24/7 </p>
-            <a
+            <Link
               href="tel:+91 8076603020"
               className="text-[#0066cc] font-bold text-2xl my-2"
             >
               +91 8076603020
-            </a>
+            </Link>
             <p>sec - 12, Noida/Delhi NCR</p>
             <p className="text-black flex gap-3 mt-5">
               <TiSocialFacebook />
@@ -33,21 +34,21 @@ const Footer = () => {
             <div>
               <ul>
                 <li className="my-2 cursor-pointer">
-                  <a href="/about"> About Us </a>
+                  <Link href="/about"> About Us </Link>
                 </li>
                 <li className="my-2 cursor-pointer">
-                  <a href="/contact"> Contact Us </a>
+                  <Link href="/contact"> Contact Us </Link>
                 </li>
                 <li className="my-2 cursor-pointer">
-                  <a href="/products"> All Product </a>
+                  <Link href="/products"> All Product </Link>
                 </li>
                 <li className="my-2 cursor-pointer">
-                  <a href=""> Privacy Policy </a>
+                  <Link href="/"> Privacy Policy </Link>
                 </li>
                 <li className="my-2 cursor-pointer">
-                  <a href=""> Terms & Conditions </a>
+                  <Link href="/"> Terms & Conditions </Link>
                 </li>
-                {/* <li className="my-2 cursor-pointer"><a href=""> Return Policy </a></li> */}
+                {/* <li className="my-2 cursor-pointer"><Link href=""> Return Policy </Link></li> */}
               </ul>
             </div>
           </div>

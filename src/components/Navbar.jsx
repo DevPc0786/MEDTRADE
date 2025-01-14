@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 text-xl font-bold">
-            <a href="/">Medtrade</a>
+            <Link href="/" passHref>
+              Medtrade
+            </Link>
           </div>
 
           {/* Menu Button for Mobile */}
@@ -52,36 +55,35 @@ const Navbar = () => {
 
           {/* Navbar Links for Desktop */}
           <div className="hidden md:flex space-x-6">
-            <a
+            <Link
               href="/"
+              passHref
               className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/about"
+              passHref
               className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="/products"
+              passHref
               className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
             >
               All Product
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
+              passHref
               className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
             >
               Contact
-            </a>
-            <a
-              href="tel:+918076603020"
-              className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
-            >
-              +91 8076603020
-            </a>
+            </Link>
+           
           </div>
         </div>
 
@@ -89,36 +91,40 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } md:hidden  rounded-md mt-2 space-y-2 px-4 py-4`}
+          } md:hidden rounded-md mt-2 space-y-2 px-4 py-4`}
         >
-          <a
+          <Link
             href="/"
+            passHref
             onClick={closeMenu}
             className="block text-sm hover:bg-blue-800 py-2 px-4 rounded-md"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/about"
+            passHref
             onClick={closeMenu}
             className="block text-sm hover:bg-blue-800 py-2 px-4 rounded-md"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             href="/products"
+            passHref
             onClick={closeMenu}
             className="block text-sm hover:bg-blue-800 py-2 px-4 rounded-md"
           >
             All Product
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
+            passHref
             onClick={closeMenu}
             className="block text-sm hover:bg-blue-800 py-2 px-4 rounded-md"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
