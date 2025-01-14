@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 text-xl font-bold">
-            <a href="/">MyLogo</a>
+            <a href="/">Medtrade</a>
           </div>
 
           {/* Menu Button for Mobile */}
@@ -75,6 +75,12 @@ const Navbar = () => {
               className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
             >
               Contact
+            </a>
+            <a
+              href="tel:+918076603020"
+              className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
+            >
+              +91 8076603020
             </a>
           </div>
         </div>

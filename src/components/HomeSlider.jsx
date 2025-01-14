@@ -9,20 +9,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function Home() {
   return (
-    <div className="home-page relative w-full h-screen overflow-hidden">
+    <div className="home-page ">
       <video 
         src="/videoo.mp4" 
         autoPlay 
         loop 
         muted 
         playsInline 
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="lg:w-full lg:h-[664px] object-cover"
       >
         Your browser does not support the video tag.
       </video>
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white">
      
-      </div>
     </div>
   );
 }
