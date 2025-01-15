@@ -9,18 +9,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function Home() {
   return (
-    <div className="home-page ">
-      <video 
-        src="/videoo.mp4" 
-        autoPlay 
-        loop 
-        muted 
-        playsInline 
-        className="lg:w-full lg:h-[664px] object-cover"
+    <div className="home-page relative text-center">
+      <video
+        src="/videoo.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="lg:w-full lg:h-[664px] object-cover "
       >
         Your browser does not support the video tag.
       </video>
-     
+      <p className="bg-[#00000099] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full"></p>
+      <div className="text-2xl lg:text-6xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <p> Helping You Heal: Buy or Rent Equipment Anytime. </p>
+      </div>
     </div>
   );
 }
