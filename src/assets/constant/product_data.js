@@ -2,7 +2,7 @@
 export const products = [
   {
     id: 1,
-    name: "Vitamin E Capsule",
+    name: "Vitamin Es Capsule",
     price: "300",
     dis_price: "350",
     rating: "4.0",
@@ -100,143 +100,143 @@ export const products = [
   },
 ];
 
-export const chairs = [
-  {
-    id: 1,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 2,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 3,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 4,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 5,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 6,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 7,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 8,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-];
+// export const chairs = [
+//   {
+//     id: 1,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 2,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 3,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 4,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 5,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 6,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 7,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 8,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+// ];
 
-export const healthCare = [
-  {
-    id: 1,
-    name: "Vitamin E Capsule",
-    price: "390",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 2,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 3,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 4,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 5,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 6,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-  {
-    id: 7,
-    name: "Vitamin E Capsule",
-    price: "300",
-    dis_price: "350",
-    rating: "4.0",
-    images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-  },
-];
+// export const healthCare = [
+//   {
+//     id: 1,
+//     name: "Vitamin E Capsule",
+//     price: "390",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 2,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 3,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 4,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 5,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 6,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+//   {
+//     id: 7,
+//     name: "Vitamin E Capsule",
+//     price: "300",
+//     dis_price: "350",
+//     rating: "4.0",
+//     images:
+//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+//   },
+// ];

@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
-import { healthCare } from "../../assets/constant/product_data";
+import { products } from "../../assets/constant/product_data";
 
 export default function UserDetails() {
   const router = useRouter();
   const { id } = router.query;
 
   // Find the user by id
-  const user = healthCare.find((u) => u.id === parseInt(id));
+  const user = products.find((u) => u.id === parseInt(id));
 
   if (!user) {
     return <h1>User not found</h1>;

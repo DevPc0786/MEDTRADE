@@ -22,7 +22,7 @@ const Dashboard = () => {
     <div>
       <div>
         <Home />
-        <div>
+        {/* <div>
           <div className="flex justify-between">
             <h2 className="mx-8 mt-10  font-bold tracking-wide text-xl">
               Health Care
@@ -36,7 +36,7 @@ const Dashboard = () => {
               <ProductCard setModel={setModel} item={item} />
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div>
           <div className="flex justify-between">
@@ -54,7 +54,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <div className="flex justify-between">
             <h2 className="mx-8 mt-10  font-bold tracking-wide text-xl">
               Health Care
@@ -68,7 +68,7 @@ const Dashboard = () => {
               <ProductCard setModel={setModel} item={item} />
             ))}
           </div>
-        </div>
+        </div> */}
 
         <Healthconcern />
       </div>
