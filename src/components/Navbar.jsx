@@ -12,12 +12,13 @@ const Navbar = () => {
 
   return (
     <nav className="bg-blue-600 text-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 text-xl font-bold">
-            <Link href="/" passHref>
-              Medtrade
+            <Link className="flex items-center gap-2 " href="" passHref>
+            <img className="h-8 w-8" src="/img/logo.png" alt="" />
+              <span c>Medtrade</span>
             </Link>
           </div>
 
