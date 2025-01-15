@@ -22,15 +22,15 @@ const AllProducts = () => {
 
       <div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {chairs.map((item, i) => (
+          {/* {chairs.map((item, i) => (
             <ProductCard setModel={setModel} item={item} />
-          ))}
+          ))} */}
           {products.map((item, i) => (
             <ProductCard setModel={setModel} item={item} />
           ))}
-          {healthCare.map((item, i) => (
+          {/* {healthCare.map((item, i) => (
             <ProductCard setModel={setModel} item={item} />
-          ))}
+          ))} */}
         </div>
       </div>
 

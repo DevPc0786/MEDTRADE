@@ -1,91 +1,134 @@
-import React from 'react'
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import React, { useState } from "react";
+import Link from "next/link";
 
-export default function Navbar() {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Function to toggle the menu
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  // Function to close the menu
+  const closeMenu = () => setIsOpen(false);
+
   return (
-    <div>
-      {/* <div className='bg-blue-400 py-4 flex justify-between'>
-        <div className=" text-lg font-bold text-white">
-         <h1 className='ml-4'>amityatul@gmail.com | +91 80766 03020</h1>
-        </div>
-        <div className=" text-lg font-bold text-white">
-        <p className="text-white flex gap-3 mr-4 text-2xl">
-              <FaInstagram />
-              <FaFacebook />
-            </p>
-        </div>
-
-      </div> */}
-      <nav className="bg-blue-900 text-white shadow-md">
-        <div className="flex items-center justify-between lg:px-6 py-3">
-          <div className="items-center lg:gap-2 flex ">
-            <img
-              src="https://png.pngtree.com/png-vector/20240418/ourmid/pngtree-gaming-logo-modern-style-design-png-image_12295068.png"
-              alt="Logo"
-              className="h-12 w-12"
-            />
-            <a className="text-xl flex font-bold text-white" href="/">
-              Medtrade System
-            </a>
+    <nav className="bg-blue-600 text-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <div className="flex-shrink-0 text-xl font-bold">
+            <Link href="/" passHref>
+              Medtrade
+            </Link>
           </div>
-          
 
-          <ul className="hidden md:flex space-x-6 text-blue-300  mr-4 font-4xl">
-            <li>
-              <a href="" id='btn'>Call Us</a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="hover:text-blue-400 transition duration-300 ease-in-out"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/about"
-                className="hover:text-blue-400 transition duration-300 ease-in-out"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="/products"
-                className="hover:text-blue-400 transition duration-300 ease-in-out"
-              >
-                Product
-              </a>
-            </li>
-            <li>
-              <a
-                href="/contact"
-                className="hover:text-blue-400 transition duration-300 ease-in-out"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-          <div className="block md:hidden">
-            <button>
+          {/* Menu Button for Mobile */}
+          <div className="flex md:hidden">
+            <button
+              onClick={toggleMenu}
+              className="text-white focus:outline-none"
+            >
               <svg
-                className="w-6 h-6 text-white"
+                className="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
-                stroke="currentColor"
                 viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                {isOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
               </svg>
             </button>
           </div>
+
+          {/* Navbar Links for Desktop */}
+          <div className="hidden md:flex space-x-6">
+            <Link
+              href="/"
+              passHref
+              className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              passHref
+              className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
+            >
+              About
+            </Link>
+            <Link
+              href="/products"
+              passHref
+              className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
+            >
+              All Product
+            </Link>
+            <Link
+              href="/contact"
+              passHref
+              className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
+            >
+              Contact
+            </Link>
+           
+          </div>
         </div>
-      </nav>
-    </div>
+
+        {/* Navbar Links for Mobile */}
+        <div
+          className={`${
+            isOpen ? "block" : "hidden"
+          } md:hidden rounded-md mt-2 space-y-2 px-4 py-4`}
+        >
+          <Link
+            href="/"
+            passHref
+            onClick={closeMenu}
+            className="block text-sm hover:bg-blue-800 py-2 px-4 rounded-md"
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            passHref
+            onClick={closeMenu}
+            className="block text-sm hover:bg-blue-800 py-2 px-4 rounded-md"
+          >
+            About
+          </Link>
+          <Link
+            href="/products"
+            passHref
+            onClick={closeMenu}
+            className="block text-sm hover:bg-blue-800 py-2 px-4 rounded-md"
+          >
+            All Product
+          </Link>
+          <Link
+            href="/contact"
+            passHref
+            onClick={closeMenu}
+            className="block text-sm hover:bg-blue-800 py-2 px-4 rounded-md"
+          >
+            Contact
+          </Link>
+        </div>
+      </div>
+    </nav>
   );
-}
+};
+
+export default Navbar;
