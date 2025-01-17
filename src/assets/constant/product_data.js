@@ -100,143 +100,41 @@ export const products = [
   },
 ];
 
-// export const chairs = [
-//   {
-//     id: 1,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 2,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 3,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 4,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 5,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 6,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 7,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 8,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-// ];
-
-// export const healthCare = [
-//   {
-//     id: 1,
-//     name: "Vitamin E Capsule",
-//     price: "390",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 2,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 3,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 4,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 5,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 6,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-//   {
-//     id: 7,
-//     name: "Vitamin E Capsule",
-//     price: "300",
-//     dis_price: "350",
-//     rating: "4.0",
-//     images:
-//       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
-//   },
-// ];
+export const rentProducts = [
+  {
+    id: 1,
+    name: "Vitamin Es Capsule",
+    price: "300",
+    dis_price: "350",
+    rating: "4.0",
+    images:
+      "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
+  },
+  {
+    id: 7,
+    name: "Antacid Syrup",
+    price: "130",
+    dis_price: "150",
+    rating: "4.2",
+    images:
+      "https://images.apollo247.in/pub/media/catalog/product/a/p/apa0017_1-sep2023_1_.jpg",
+  },
+  {
+    id: 8,
+    name: "Pain Relief Gel",
+    price: "250",
+    dis_price: "300",
+    rating: "4.5",
+    images:
+      "https://www.bigbasket.com/media/uploads/p/l/40207685_1-dr-morepen-pain-x-max-body-pain-relief-gel-for-muscle-joints-knee-neck-back-pain.jpg",
+  },
+  {
+    id: 9,
+    name: "Multivitamin Capsules",
+    price: "400",
+    dis_price: "450",
+    rating: "4.6",
+    images:
+      "https://5.imimg.com/data5/SELLER/Default/2022/9/KN/VD/LI/38264016/multivitamin-multiminerals-antioxidant-softgel-capsule.jpg",
+  },
+];

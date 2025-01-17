@@ -7,8 +7,7 @@ import Healthconcern from "./ShopbyHealth";
 import ProductCard from "./ProductCard";
 import { products } from "@/assets/constant/product_data";
 import CallbackForm from "./CallbackForm";
-import { chairs } from "@/assets/constant/product_data";
-import { healthCare } from "@/assets/constant/product_data";
+import { rentProducts } from "@/assets/constant/product_data";
 import Link from "next/link";
 
 const Dashboard = () => {
@@ -23,28 +22,16 @@ const Dashboard = () => {
     <div>
       <div>
         <Home />
-        {/* <div>
-          <div className="flex justify-between">
-            <h2 className="mx-8 mt-10  font-bold tracking-wide text-xl">
-              Health Care
-            </h2>
-            <a href="/products" className="mx-8 mt-10 cursor-pointer text-orange-400 font-bold hover:text-orange-600 tracking-wide text-xl">
-              View all
-            </a>
-          </div>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-            {chairs.slice(0, 5).map((item, i) => (
-              <ProductCard setModel={setModel} item={item} />
-            ))}
-          </div>
-        </div> */}
 
         <div>
           <div className="flex justify-between">
             <h2 className="mx-8 mt-10  font-bold tracking-wide text-xl">
-              Health Care
+              Best Deal for Rent
             </h2>
-            <Link href="/products" className="mx-8 mt-10 cursor-pointer text-orange-400 font-bold hover:text-orange-600 tracking-wide text-xl">
+            <Link
+              href="/products"
+              className="mx-8 mt-10 cursor-pointer text-blue-400 font-bold hover:text-blue-600 hover:underline tracking-wide text-xl"
+            >
               View all
             </Link>
           </div>
@@ -55,21 +42,24 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* <div>
+        <div>
           <div className="flex justify-between">
             <h2 className="mx-8 mt-10  font-bold tracking-wide text-xl">
-              Health Care
+              Best Deal for Buy
             </h2>
-            <a href="/products" className="mx-8 mt-10 cursor-pointer text-orange-400 font-bold hover:text-orange-600 tracking-wide text-xl">
+            <Link
+              href="/products"
+              className="mx-8 mt-10 cursor-pointer text-orange-400 font-bold hover:text-orange-600 tracking-wide text-xl"
+            >
               View all
-            </a>
+            </Link>
           </div>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-            {healthCare.slice(0, 5).map((item, i) => (
-              <ProductCard setModel={setModel} item={item} />
+          <div className="grid grid-cols-2 gap-2 mx-2  lg:grid-cols-3 xl:grid-cols-5">
+            {rentProducts.slice(0, 5).map((item, i) => (
+              <ProductCard key={i} setModel={setModel} item={item} />
             ))}
           </div>
-        </div> */}
+        </div>
 
         <Healthconcern />
       </div>
