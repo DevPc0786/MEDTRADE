@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ProductCard from './ProductCard';
 import { products } from '@/assets/constant/product_data';
+import { rentProducts } from '@/assets/constant/product_data';
 import CallbackForm from './CallbackForm';
 
 const AllProducts = () => {
@@ -22,6 +23,9 @@ const AllProducts = () => {
         <div className="grid grid-cols-2 gap-2 mx-2  lg:grid-cols-3 xl:grid-cols-5">
           {products.map((item, i) => (
             <ProductCard key={i} setModel={setModel} item={item} />
+          ))}
+          {rentProducts.map((item, i) => (
+            <ProductCard item={item} />
           ))}
         </div>
       </div>
