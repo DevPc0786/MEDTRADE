@@ -13,24 +13,24 @@ const ProductCard = ({item, setModel}) => {
         <div>
           <div className="relative flex w-full my-4 m-auto max-w-[17rem] flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg ">
             <Link
-              className="relative mx-3 mt-3 flex h-52 overflow-hidden rounded-xl items-center"
+              className="relative mx-3 mt-3 flex h-36 lg:h-52 overflow-hidden rounded-xl items-center"
               href={`/product/${item.id}`}
             >
               <img
-                className="object-cover w-52 m-auto"
+                className="object-cover w-32 lg:w-52 m-auto"
                 src={item.images}
                 alt="product image"
               />
             </Link>
-            <div className="mt-4 px-5 pb-5">
+            <div className="lg:mt-4 px-2 lg:px-5 lg:pb-5 pb-2">
               <a href="#">
-                <h5 className="text-xl tracking-tight text-slate-900">
+                <h5 className="text-lg lg:text-xl tracking-tight text-slate-900">
                   {item.name}
                 </h5>
               </a>
               <div className="mt-2 mb-5 flex items-center justify-between">
                 <p>
-                  <span className="text-3xl font-bold text-slate-900">
+                  <span className="text-xl lg:text-3xl font-bold text-slate-900">
                     ₹{item.price}
                   </span>
                   <span className="text-sm text-slate-900 line-through mx-2">
@@ -38,7 +38,7 @@ const ProductCard = ({item, setModel}) => {
                   </span>
                 </p>
                 <div className="flex items-center">
-                  <span className="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">
+                  <span className="mr-2 ml-3 rounded bg-yellow-200 px-1.5 lg:px-2.5 py-0.5 text-xs font-semibold">
                     {item.rating}
                   </span>
                 </div>
