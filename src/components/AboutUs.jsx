@@ -9,7 +9,7 @@ const AboutUs = () => {
         <div className="container mx-auto text-center px-4">
           <h1 className="text-4xl font-bold mb-4">About Medtrade Systems</h1>
           <p className="text-lg max-w-2xl mx-auto">
-            At Medtrade Systems, we aim to bridge the gap between innovation
+            At Medtrade Systems, we aim to bridge the gap between  innovation
             and healthcare. Providing top-quality medical equipment to improve
             lives.
           </p>
