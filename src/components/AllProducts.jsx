@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import ProductCard from './ProductCard';
 import { products } from '@/assets/constant/product_data';
-import { chairs } from '@/assets/constant/product_data';
-import { healthCare } from '@/assets/constant/product_data';
 import CallbackForm from './CallbackForm';
 
 const AllProducts = () => {
@@ -22,15 +20,9 @@ const AllProducts = () => {
 
       <div>
         <div className="grid grid-cols-2 gap-2 mx-2  lg:grid-cols-3 xl:grid-cols-5">
-          {/* {chairs.map((item, i) => (
-            <ProductCard setModel={setModel} item={item} />
-          ))} */}
           {products.map((item, i) => (
-            <ProductCard setModel={setModel} item={item} />
+            <ProductCard key={i} setModel={setModel} item={item} />
           ))}
-          {/* {healthCare.map((item, i) => (
-            <ProductCard setModel={setModel} item={item} />
-          ))} */}
         </div>
       </div>
 
