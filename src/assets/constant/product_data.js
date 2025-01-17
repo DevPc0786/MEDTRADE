@@ -11,21 +11,21 @@ export const products = [
   },
   {
     id: 2,
-    name: "Paracetamol Tablet",
+    name: "ICU Standard Bed",
     price: "50",
     dis_price: "70",
     rating: "4.5",
     images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.21_8e4d9311-removebg-preview.png",
+      "/img/bed.jpg",
   },
   {
     id: 3,
-    name: "Ibuprofen Tablet",
+    name: "Suction Machine",
     price: "100",
     dis_price: "120",
     rating: "4.2",
     images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.21_d1225401-removebg-preview.png",
+      "/img/Suction Machine.png",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ export const products = [
     dis_price: "220",
     rating: "4.3",
     images:
-      "/img/WhatsApp_Image_2025-01-01_at_12.56.22_fe4590a4-removebg-preview.png",
+      "/img/",
   },
   {
     id: 5,
