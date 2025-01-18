@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function HomeTextTypewriter() {
-  const text = "Buy or Rent Medical Equipment on best Price!";
+  const text = "Buy and Get on Rent Medical Equipments from Medtrade Stystem on the best Price.";
   const speed = 100; // Typing speed in milliseconds
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
@@ -25,7 +25,7 @@ export default function HomeTextTypewriter() {
         fontWeight: "bold"
       }}
     >
-      <h1 style={{ display: "inline" }}>{displayedText}</h1>
+      <h1 style={{ display: "inline", textShadow: "5px 2px black" }}>{displayedText}</h1>
       <span
         style={{
           display: "inline-block",
