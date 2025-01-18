@@ -22,7 +22,11 @@ export default function Home() {
       </video>
       <p className="bg-[#00000099] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full"></p>
       <div className="text-2xl lg:text-6xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <p> Helping You Heal: Buy or Rent Equipment Anytime. </p>
+        <p className="font-bold">
+          <span className="text-orange-400">Buy or Rent </span> Medical
+          <span className="text-[--btncolor]"> Equipment </span> on best
+          <span className="text-yellow-500"> Price. </span>
+        </p>
       </div>
     </div>
   );
