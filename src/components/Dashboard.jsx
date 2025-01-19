@@ -49,7 +49,7 @@ const Dashboard = () => {
             </h2>
             <Link
               href="/products"
-              className="mx-8 mt-10 cursor-pointer text-orange-400 font-bold hover:text-orange-600 tracking-wide text-xl"
+              className="mx-8 mt-10 cursor-pointer text-blue-400 font-bold hover:text-blue-600 hover:underline tracking-wide text-xl"
             >
               View all
             </Link>

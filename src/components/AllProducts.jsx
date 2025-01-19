@@ -25,7 +25,7 @@ const AllProducts = () => {
             <ProductCard key={i} setModel={setModel} item={item} />
           ))}
           {rentProducts.map((item, i) => (
-            <ProductCard item={item} />
+            <ProductCard key={i} item={item} setModel={setModel} />
           ))}
         </div>
       </div>
