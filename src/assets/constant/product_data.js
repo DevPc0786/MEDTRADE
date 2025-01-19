@@ -11,7 +11,7 @@ export const products = [
   },
   {
     id: 1,
-    name: "Vitamin Es Capsule",
+    name: "Vitamin Es Capsule ",
     price: "300",
     dis_price: "350",
     rating: "4.0",
