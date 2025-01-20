@@ -2,30 +2,30 @@ import { MdClose } from "react-icons/md";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const CallbackForm = ({ closeModel }) => {
+const CallbackForm = ({ closeModel, productName }) => {
   const form = useRef();
-  
+
   const YOUR_SERVICE_ID = "";
 
-   const sendEmail = (e) => {
-     e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-     emailjs
-       .sendForm("service_ox24v2v", "template_dwbuofn", form.current, {
-         publicKey: "jSH5Vc-W2JDsuqA-3",
-       })
-       .then(
-         () => {
-           console.log("SUCCESS!");
-         },
-         (error) => {
-           console.log("FAILED...", error.text);
-         }
-     );
-     form.current.reset();
-     closeModel(true);
+    emailjs
+      .sendForm("service_ox24v2v", "template_dwbuofn", form.current, {
+        publicKey: "jSH5Vc-W2JDsuqA-3",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+    form.current.reset();
+    closeModel(true);
   };
-  
+
   return (
     <>
       <div className="fixed left-0 right-0 bottom-0 top-0 bg-slate-400 bg-opacity-50 backdrop-blur-sm"></div>
@@ -46,6 +46,7 @@ const CallbackForm = ({ closeModel }) => {
               placeholder="Name"
               required
             />
+            <input id="name" type="hidden" name="productName" value={productName}/>
           </div>
           <div className="mb-4">
             <label
