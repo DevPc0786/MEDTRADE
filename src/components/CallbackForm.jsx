@@ -2,7 +2,7 @@ import { MdClose } from "react-icons/md";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const CallbackForm = ({ closeModel, productName }) => {
+const CallbackForm = ({ closeModel, productName, productPrice }) => {
   const form = useRef();
 
   const YOUR_SERVICE_ID = "";
@@ -47,6 +47,7 @@ const CallbackForm = ({ closeModel, productName }) => {
               required
             />
             <input id="name" type="hidden" name="productName" value={productName}/>
+            <input id="price" type="hidden" name="productPrice" value={productPrice}/>
           </div>
           <div className="mb-4">
             <label

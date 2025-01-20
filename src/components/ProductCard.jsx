@@ -42,7 +42,7 @@ const ProductCard = ({ item, setModel, onProductSelect }) => {
               </div>
             </div>
             <button
-              onClick={() => onProductSelect(item.name)}
+              onClick={() => onProductSelect(item.name, item.price)}
               className="w-full flex items-center justify-center rounded-md bg-[--btncolor] px-5 py-2.5 text-center text-sm font-medium text-white hover:text-slate-900 border hover:bg-white focus:outline-none focus:ring-4 focus:ring-blue-300"
             >
               {/* <IoCallOutline className="mr-2 h-6 w-6" /> */}

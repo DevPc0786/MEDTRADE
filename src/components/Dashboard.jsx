@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Dashboard = () => {
   const [model, setModel] = useState(false);
-    const [selectedProduct, setSelectedProduct] = useState(""); // State to store the selected product name
+    const [selectedProduct, setSelectedProduct] = useState({name: "", price: 0}); // State to store the selected product name
   
 
    const closeModel = () => {
@@ -20,8 +20,8 @@ const Dashboard = () => {
      console.log("close model");
   };
 
-     const handleProductSelect = (productName) => {
-       setSelectedProduct(productName); // Set the selected product name
+     const handleProductSelect = (productName, productPrice) => {
+       setSelectedProduct({name: productName, price: productPrice}); // Set the selected product name
        setModel(true); // Open the modal
      };
   
@@ -79,7 +79,7 @@ const Dashboard = () => {
         <Healthconcern />
       </div>
       {model && (
-        <CallbackForm closeModel={closeModel} productName={selectedProduct} />
+        <CallbackForm closeModel={closeModel} productName={selectedProduct.name} productPrice={selectedProduct.price} />
       )}
     </div>
   );
