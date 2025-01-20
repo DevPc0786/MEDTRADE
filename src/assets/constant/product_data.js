@@ -5,7 +5,7 @@ export const products = [
     name: "Vitamin Es Capsule",
     price: "300",
     dis_price: "350",
-    rating: "4.0",
+    rating: "4. 0",
     images:
       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
   },
