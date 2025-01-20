@@ -7,6 +7,7 @@ import { TbMessageCircle } from "react-icons/tb";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import HomeTextTypewriter from "./HomeTextTypewriter";
 export default function Home() {
   return (
     <div className="home-page relative text-center">
@@ -22,7 +23,7 @@ export default function Home() {
       </video>
       <p className="bg-[#00000099] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full"></p>
       <div className="text-2xl lg:text-6xl text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <p> Helping You Heal: Buy or Rent Equipment Anytime. </p>
+        <div> <HomeTextTypewriter /> </div>
       </div>
     </div>
   );

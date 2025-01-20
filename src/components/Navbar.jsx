@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 text-xl font-bold">
-            <Link className="flex items-center gap-2 " href="" passHref>
+            <Link className="flex items-center gap-2 " href="/">
             <img className="h-8 w-8" src="/img/logo.png" alt="" />
               <span c>Medtrade</span>
             </Link>
