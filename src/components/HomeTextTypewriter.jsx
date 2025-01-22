@@ -17,19 +17,16 @@ export default function HomeTextTypewriter() {
   }, [index, text, speed]);
 
   return (
-    <div
-      style={{
-        textAlign: "center",
-        marginTop: "50px",
-              fontFamily: "monospace",
-        fontWeight: "bold"
-      }}
-    >
-      <h1 style={{ display: "inline", textShadow: "5px 2px black" }}>{displayedText}</h1>
+    <div className="text-center font-mono font-bold">
+      <p
+        className="text-sm lg:text-4xl inline text-"
+        style={{ textShadow: "5px 2px black" }}
+      >
+        {displayedText}
+      </p>
       <span
+        className="inline-block w-2 text-sm lg:text-4xl"
         style={{
-          display: "inline-block",
-          width: "1ch",
           animation: "blink 0.7s steps(1) infinite",
         }}
       >
