@@ -9,6 +9,7 @@ import { products } from "@/assets/constant/product_data";
 import CallbackForm from "./CallbackForm";
 import { rentProducts } from "@/assets/constant/product_data";
 import Link from "next/link";
+import DiscountBanner from "./DiscountBanner";
 
 const Dashboard = () => {
   const [model, setModel] = useState(false);
@@ -81,6 +82,8 @@ const Dashboard = () => {
       {model && (
         <CallbackForm closeModel={closeModel} productName={selectedProduct.name} productPrice={selectedProduct.price} />
       )}
+
+      <DiscountBanner />
     </div>
   );
 };
