@@ -9,14 +9,22 @@ import { products } from "@/assets/constant/product_data";
 import CallbackForm from "./CallbackForm";
 import { rentProducts } from "@/assets/constant/product_data";
 import Link from "next/link";
+import DiscountBanner from "./DiscountBanner";
 
 const Dashboard = () => {
-   const [model, setModel] = useState(false);
+  const [model, setModel] = useState(false);
+    const [selectedProduct, setSelectedProduct] = useState({name: "", price: 0}); // State to store the selected product name
+  
 
    const closeModel = () => {
      setModel(false);
      console.log("close model");
   };
+
+     const handleProductSelect = (productName, productPrice) => {
+       setSelectedProduct({name: productName, price: productPrice}); // Set the selected product name
+       setModel(true); // Open the modal
+     };
   
   return (
     <div>
@@ -36,8 +44,12 @@ const Dashboard = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-2 mx-2  lg:grid-cols-3 xl:grid-cols-5">
-            {products.slice(0, 5).map((item, i) => (
-              <ProductCard key={i} setModel={setModel} item={item} />
+            {rentProducts.slice(0, 5).map((item, i) => (
+              <ProductCard
+                key={i}
+                onProductSelect={handleProductSelect} // Pass handler to ProductCard
+                item={item}
+              />
             ))}
           </div>
         </div>
@@ -55,15 +67,23 @@ const Dashboard = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-2 mx-2  lg:grid-cols-3 xl:grid-cols-5">
-            {rentProducts.slice(0, 5).map((item, i) => (
-              <ProductCard key={i} setModel={setModel} item={item} />
+            {products.slice(0, 5).map((item, i) => (
+              <ProductCard
+                key={i}
+                onProductSelect={handleProductSelect} // Pass handler to ProductCard
+                item={item}
+              />
             ))}
           </div>
         </div>
 
         <Healthconcern />
       </div>
-      {model && <CallbackForm closeModel={closeModel} />}
+      {model && (
+        <CallbackForm closeModel={closeModel} productName={selectedProduct.name} productPrice={selectedProduct.price} />
+      )}
+
+      <DiscountBanner />
     </div>
   );
 };
