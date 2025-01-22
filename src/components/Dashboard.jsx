@@ -44,13 +44,16 @@ const Dashboard = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-2 mx-2  lg:grid-cols-3 xl:grid-cols-5">
-            {rentProducts.slice(0, 5).map((item, i) => (
-              <ProductCard
-                key={i}
-                onProductSelect={handleProductSelect} // Pass handler to ProductCard
-                item={item}
-              />
-            ))}
+            {products
+              .filter((item) => item.option === "rent") // Filter products with option "buy"
+              .slice(0, 5) // Limit to the first 5 items
+              .map((item, i) => (
+                <ProductCard
+                  key={i}
+                  onProductSelect={handleProductSelect} // Pass handler to ProductCard
+                  item={item}
+                />
+              ))}
           </div>
         </div>
 
@@ -67,20 +70,27 @@ const Dashboard = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-2 mx-2  lg:grid-cols-3 xl:grid-cols-5">
-            {products.slice(0, 5).map((item, i) => (
-              <ProductCard
-                key={i}
-                onProductSelect={handleProductSelect} // Pass handler to ProductCard
-                item={item}
-              />
-            ))}
+            {products
+              .filter((item) => item.option === "buy") // Filter products with option "buy"
+              .slice(0, 5) // Limit to the first 5 items
+              .map((item, i) => (
+                <ProductCard
+                  key={i}
+                  onProductSelect={handleProductSelect} // Pass handler to ProductCard
+                  item={item}
+                />
+              ))}
           </div>
         </div>
 
         <Healthconcern />
       </div>
       {model && (
-        <CallbackForm closeModel={closeModel} productName={selectedProduct.name} productPrice={selectedProduct.price} />
+        <CallbackForm
+          closeModel={closeModel}
+          productName={selectedProduct.name}
+          productPrice={selectedProduct.price}
+        />
       )}
 
       <DiscountBanner />
