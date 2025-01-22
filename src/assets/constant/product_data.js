@@ -2,10 +2,10 @@
 export const products = [
   {
     id: 1,
-    name: "Vitamin Es Capsule",
+    name: "Vitamin ES Capsule",
     price: "300",
     dis_price: "350",
-    rating: "4.0",
+    rating: "4. 0",
     images:
       "/img/WhatsApp_Image_2025-01-01_at_12.56.20_c3807fec-removebg-preview.png",
   },
@@ -94,7 +94,7 @@ export const products = [
 export const rentProducts = [
    
   {
-    id: 3,
+    id: 1,
     name: "Suction Machine",
     price: "100",
     dis_price: "120",
@@ -113,7 +113,7 @@ export const rentProducts = [
       "/img/bed.jpg",
   },
   {
-    id: 7,
+    id: 3,
     name: "ECG 12",
     price: "130",
     dis_price: "150",
@@ -122,7 +122,7 @@ export const rentProducts = [
       "/img/ECG 12.png",
   },
   {
-    id: 8,
+    id: 4,
     name: "Sringe Pump",
     price: "250",
     dis_price: "300",
@@ -131,12 +131,48 @@ export const rentProducts = [
       "/img/Syringe pump touch.png",
   },
   {
-    id: 9,
+    id: 5,
     name: "3 PARA MONITOR",
     price: "400",
     dis_price: "450",
     rating: "4.6",
     images:
       "/img/Para monitor.png",
+  },
+  {
+    id: 6,
+    name: "RESPIRARE VT 60ST",
+    price: "32000",
+    dis_price: "450",
+    rating: "4.6",
+    images:
+      "/img/Respirare.png",
+  },
+  {
+    id: 7,
+    name: "GE ECG Patient Cable",
+    price: "400",
+    dis_price: "450",
+    rating: "4.6",
+    images:
+      "/img/GE-ECG.png",
+  },
+  {
+    id: 8,
+    name: "Philips ECG Cable",
+    price: "400",
+    dis_price: "450",
+    rating: "4.6",
+    images:
+      "/img/philips-cable.png",
+  },
+  {
+    id: 9,
+    name: "GE ECG Patient Cable",
+    price: "400",
+    dis_price: "450",
+    rating: "4.6",
+    images:
+      "/img/GE ECG.png",
   },
 ];
