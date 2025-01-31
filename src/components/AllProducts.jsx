@@ -34,7 +34,7 @@ const AllProducts = () => {
               item={item}
             />
           ))}
-          {rentProducts.map((item, i) => (
+          {products.map((item, i) => (
             <ProductCard
               key={i}
               item={item}
