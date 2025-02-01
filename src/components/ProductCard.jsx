@@ -9,7 +9,7 @@ const ProductCard = ({ item, setModel, onProductSelect }) => {
   return (
     <div>
       <div>
-        <div className="relative flex w-full my-4 m-auto max-w-[17rem] flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg ">
+        <div className="relative flex w-full my-4 m-auto max-w-[17rem] max-h-[25rem] flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg ">
           <Link
             className="relative mx-3 mt-3 flex h-36 lg:h-52 overflow-hidden rounded-xl items-center"
             href={`/product/${item.id}`}
