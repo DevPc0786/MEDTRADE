@@ -14,15 +14,15 @@ export default function UserDetails() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <div className="flex justify-around">
-        <div>
+      <div className="flex justify-between">
+        <div className="w-full">
           <img
             className="object-cover w-52 m-auto"
             src={user.images}
             alt="product image"
           />
         </div>
-        <div>
+        <div className="w-full">
           <p className="text-xl tracking-tight text-slate-900">{user.name}</p>
           <p className="mt-2 mb-5 flex items-center justify-between">
             {user.price}
@@ -30,6 +30,21 @@ export default function UserDetails() {
           <span className="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">
             {user.rating}
           </span>
+
+          <div className="my-5">
+            <h2>Features</h2>
+            {user.features.map((feature, index) => (
+              <li key={index} className="text-sm text-gray-500">
+                {feature}
+              </li>
+            ))}
+          </div>
+
+          <div>
+            <h2>Description</h2>
+            <p className="text-sm text-gray-500">{user.description}</p>
+          </div>
+          
         </div>
       </div>
     </div>
