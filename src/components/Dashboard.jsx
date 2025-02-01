@@ -12,6 +12,14 @@ import Link from "next/link";
 import DiscountBanner from "./DiscountBanner";
 
 const Dashboard = () => {
+   const contactNumber = "918076603020"; // Replace with your dynamic contact number logic.
+   const message = "Hello, I want to know about Medical equipments."; // The default message.
+
+   // Correct WhatsApp link to ensure the message is always pre-filled.
+   const whatsappLink = `https://wa.me/${
+     contactNumber || " "
+   }?text=${encodeURIComponent(message)}`;
+
   const [model, setModel] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState({name: "", price: 0}); // State to store the selected product name
   
@@ -83,8 +91,15 @@ const Dashboard = () => {
               ))}
           </div>
         </div>
-
-    
+        <div className="fixed bottom-2 right-2">
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <img
+              className="lg:w-10 lg:h-10 w-12 h-12 cursor-pointer"
+              src="/img/whatsapp-logo.png"
+              alt="WhatsApp Logo"
+            />
+          </a>
+        </div>
       </div>
       {model && (
         <CallbackForm
