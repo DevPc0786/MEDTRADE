@@ -9,7 +9,7 @@ const ProductCard = ({ item, setModel, onProductSelect }) => {
   return (
     <div>
       <div>
-        <div className="relative flex w-full my-4 m-auto max-w-[17rem] max-h-[25rem] flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg ">
+        <div className="relative flex w-full my-4 m-auto max-w-[17rem] h-[20rem] justify-between lg:h-[25rem] flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg ">
           <Link
             className="relative mx-3 mt-3 flex h-36 lg:h-52 overflow-hidden rounded-xl items-center"
             href={`/product/${item.id}`}
@@ -22,7 +22,7 @@ const ProductCard = ({ item, setModel, onProductSelect }) => {
           </Link>
           <div className="lg:mt-4 px-2 lg:px-5 lg:pb-5 pb-2">
             <a href="#">
-              <h5 className="text-lg lg:text-xl tracking-tight text-slate-900">
+              <h5 className="text-lg lg:text-lg tracking-tight text-slate-900">
                 {item.name}
               </h5>
             </a>

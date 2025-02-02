@@ -42,12 +42,12 @@ const Dashboard = () => {
 
         <div>
           <div className="flex justify-between">
-            <h2 className="mx-8 mt-10  font-bold tracking-wide text-xl">
+            <h2 className="mx-2 lg:mx-8 mt-10  font-bold tracking-wide text-xl">
               Best Deal for Rent
             </h2>
             <Link
               href="/products"
-              className="mx-8 mt-10 cursor-pointer text-blue-400 font-bold hover:text-blue-600 hover:underline tracking-wide text-xl"
+              className="mx-2 lg:mx-8 mt-10 cursor-pointer text-blue-400 font-bold hover:text-blue-600 hover:underline tracking-wide text-xl"
             >
               View all
             </Link>
@@ -68,12 +68,12 @@ const Dashboard = () => {
 
         <div>
           <div className="flex justify-between">
-            <h2 className="mx-8 mt-10  font-bold tracking-wide text-xl">
+            <h2 className="lg:mx-8 mx-2 mt-10  font-bold tracking-wide text-xl">
               Best Deal for Buy
             </h2>
             <Link
               href="/products"
-              className="mx-8 mt-10 cursor-pointer text-blue-400 font-bold hover:text-blue-600 hover:underline tracking-wide text-xl"
+              className="lg:mx-8 mx-2 mt-10 cursor-pointer text-blue-400 font-bold hover:text-blue-600 hover:underline tracking-wide text-xl"
             >
               View all
             </Link>
