@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const DiscountBanner = () => {
@@ -9,12 +10,12 @@ const DiscountBanner = () => {
         <p className="mb-2">
           <s className="text-white">Rs. 1850/-</s>
         </p>
-        <a
+        <Link
           href="/products"
           className="bg-black text-white px-5 py-2 rounded font-bold"
         >
           Shop Now
-        </a>
+        </Link>
       </div>
 
       <div className="mt-10 lg:mt-0 text-center lg:text-left">
