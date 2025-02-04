@@ -29,8 +29,12 @@ const Dashboard = () => {
      console.log("close model");
   };
 
-     const handleProductSelect = (productName, productPrice) => {
-       setSelectedProduct({name: productName, price: productPrice}); // Set the selected product name
+     const handleProductSelect = (productName, productPrice, productOption) => {
+       setSelectedProduct({
+         name: productName,
+         price: productPrice,
+         option: productOption,
+       }); // Set the selected product name
        setModel(true); // Open the modal
      };
   
@@ -106,6 +110,7 @@ const Dashboard = () => {
           closeModel={closeModel}
           productName={selectedProduct.name}
           productPrice={selectedProduct.price}
+          productOption={selectedProduct.option}
         />
       )}
 
