@@ -303,6 +303,6 @@ export const products = [
       "Safety: Autoclaves have safety valves and pressure gauges.",
       " Autoclaves are used in the chemical industry to cure coatings and vulcanize rubber. They are also used in the manufacturing of composites. ",
     ],
-    images: "/img/Autoclave-product.png",
+    images: "/img/autoclave-product.png",
   },
 ];
