@@ -46,7 +46,7 @@ const Dashboard = () => {
               Best Deal for Rent
             </h2>
             <Link
-              href="/products"
+              href="/rent-product"
               className="mx-2 lg:mx-8 mt-10 cursor-pointer text-blue-400 font-bold hover:text-blue-600 hover:underline tracking-wide text-xl"
             >
               View all
@@ -72,7 +72,7 @@ const Dashboard = () => {
               Best Deal for Buy
             </h2>
             <Link
-              href="/products"
+              href="/buy-product"
               className="lg:mx-8 mx-2 mt-10 cursor-pointer text-blue-400 font-bold hover:text-blue-600 hover:underline tracking-wide text-xl"
             >
               View all
