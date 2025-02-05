@@ -64,7 +64,7 @@ const Contact = () => {
         </div>
         <iframe
           className="lg:w-[600px] lg:h-[450px] w-full h-56 mb-10 lg:mb-0 px-5 mt-10 lg:mt-0"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14014.74893667879!2d77.3260048!3d28.5355161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff1f1d9e5b3%3A0x2b8f1e9e8b8e8e8e!2sNoida%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14014.74893667879!2d77.3260048!3d28.5355161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb1a1a1a1a1a%3A0x2b8f1e9e8b8e8e8e!2sLal%20Kuan%2C%20Gautambudh%20Nagar%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201009%2C%20India!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus"
           width="600"
           height="450"
           style={{ border: 0 }}
