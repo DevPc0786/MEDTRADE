@@ -299,10 +299,29 @@ export const products = [
     description:
       " An autoclave is a machine that uses steam under pressure to kill harmful bacteria, viruses, fungi, and spores on items that are placed inside a pressure vessel.",
     features: [
-      "Size: 12×22",
+      "Size: 12x22",
       "Safety: Autoclaves have safety valves and pressure gauges.",
       " Autoclaves are used in the chemical industry to cure coatings and vulcanize rubber. They are also used in the manufacturing of composites. ",
     ],
     images: "/img/autoclave-product.png",
+  },
+  {
+    id: 26,
+    name: "Suction machine",
+    price: "7000 ",
+    dis_price: "8000",
+    rating: "4.7",
+    option: "buy",
+    description:
+      "A suction machine, also known as an aspirator, is a medical device that removes fluids, secretions, or other substances from a patient's body. Suction machines are used to clear airways and prevent blockages that can make it difficult to breathe",
+    features: [
+      "Size is 12x22",
+      "1/4 hp is Horse Power",
+      "Oil-free piston pump or diaphragm pump for maintenance-free operation.",
+      "Adjustable suction pressure for different medical needs.",
+      "High and low vacuum options for various procedures.",
+      "Lightweight, compact designs for home use and emergency situations.",
+    ],
+    images: "/img/sectionmachine.png",
   },
 ];
