@@ -18,7 +18,7 @@ const Footer = () => {
             >
               +91 8076603020
             </Link>
-            <p>sec - 12, Noida/Delhi NCR</p>
+            <p></p>
             <p className="text-black flex gap-3 mt-5">
               <TiSocialFacebook />
               <IoLogoTwitter />
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <div className="text-[14px]">
           <h2 className="font-bold text-[16px] lg:mb-8 mt-5 lg:mt-0 ">
-            Medirent Bussiness
+            Medtrade Bussiness
           </h2>
           <div className="text-[--graytext]">
             <div>
