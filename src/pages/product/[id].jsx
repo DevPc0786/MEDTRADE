@@ -41,24 +41,39 @@ export default function UserDetails() {
         <div className="w-full">
           <p className="text-xl tracking-tight text-slate-900">{user.name}</p>
           <p className="mt-2 mb-5 flex items-center justify-between">
-            <span>{user.price}</span>
-            <span className="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">
+            <p className="text-xl lg:text-3xl font-bold text-slate-900 flex items-end">
+              <span> ₹{user.price} </span>
+              <p className="text-sm text-gray-500 line-through mx-1 pb-1">
+                ₹{user.dis_price}
+              </p>
+            </p>
+            <p className="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">
               {user.rating}
-            </span>
+            </p>
           </p>
 
           <div className="my-5">
             <h2>Features</h2>
-            {user.features.map((feature, index) => (
-              <li key={index} className="text-sm text-gray-500">
-                {feature}
-              </li>
-            ))}
+            {user.features.length > 0 ? (
+              <div>
+                {user.features.map((feature, index) => (
+                  <li key={index} className="text-sm text-gray-500">
+                    {feature}
+                  </li>
+                ))}
+              </div>
+            ) : (
+              <p className="text-sm text-gray-500">Not Available</p>
+            )}
           </div>
 
           <div>
             <h2>Description</h2>
-            <p className="text-sm text-gray-500">{user.description}</p>
+            {user.description.length > 0 ? (
+              <p className="text-sm text-gray-500">{user.description}</p>
+            ) : (
+              <p className="text-sm text-gray-500">Not Available</p>
+            )}
           </div>
 
           <div>

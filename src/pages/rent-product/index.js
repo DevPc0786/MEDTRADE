@@ -1,11 +1,10 @@
-"use client";
-import AboutUs from '@/components/AboutUs'
+import RentProduct from '@/components/RentProduct'
 import React from 'react'
 
 const index = () => {
   return (
     <div>
-      <AboutUs />
+      <RentProduct />
     </div>
   )
 }
