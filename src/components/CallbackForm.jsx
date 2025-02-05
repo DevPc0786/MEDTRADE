@@ -2,7 +2,12 @@ import { MdClose } from "react-icons/md";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const CallbackForm = ({ closeModel, productName, productPrice }) => {
+const CallbackForm = ({
+  closeModel,
+  productName,
+  productPrice,
+  productOption,
+}) => {
   const form = useRef();
 
   const YOUR_SERVICE_ID = "";
@@ -46,8 +51,23 @@ const CallbackForm = ({ closeModel, productName, productPrice }) => {
               placeholder="Name"
               required
             />
-            <input id="name" type="hidden" name="productName" value={productName}/>
-            <input id="price" type="hidden" name="productPrice" value={productPrice}/>
+            <input
+              id="name"
+              type="hidden"
+              name="productName"
+              value={productName}
+            />
+            <input
+              id="price"
+              type="hidden"
+              name="productPrice"
+              value={productPrice}
+            />
+            <input
+              id="option"
+              type="hidden"
+              name="productOption"
+              value={productOption} />
           </div>
           <div className="mb-4">
             <label
@@ -100,7 +120,7 @@ const CallbackForm = ({ closeModel, productName, productPrice }) => {
             />
           </div>
 
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="option"
@@ -121,7 +141,7 @@ const CallbackForm = ({ closeModel, productName, productPrice }) => {
                 Rent
               </option>
             </select>
-          </div>
+          </div> */}
 
           <div className="mb-4">
             <label

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +18,8 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0 text-xl font-bold">
             <Link className="flex items-center gap-2 " href="/">
-            <img className="h-8 w-8" src="/img/logo.png" alt="" />
-              <span c>Medtrade</span>
+              <img className="h-8 w-8" src="/img/logo.png" alt="" />
+              <span>Medtrade</span>
             </Link>
           </div>
 
@@ -70,13 +71,33 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Link
+            <div className="relative inline-block group ">
+              <button className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md focus:outline-none flex items-center gap-2">
+                <span>All Product</span>
+                <RiArrowDropDownLine size={20} />
+              </button>
+              <div className="absolute left-0 hidden w-40 bg-gray-100 shadow-lg rounded-md group-hover:block z-50">
+                <Link
+                  href="/buy-product"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-300"
+                >
+                  Buy Product
+                </Link>
+                <Link
+                  href="/rent-product"
+                  className="block px-4 py-2 text-gray-800 hover:bg-gray-300"
+                >
+                  Rent Product
+                </Link>
+              </div>
+            </div>
+            {/* <Link
               href="/products"
               passHref
               className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md"
             >
               All Product
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               passHref
@@ -84,7 +105,6 @@ const Navbar = () => {
             >
               Contact
             </Link>
-           
           </div>
         </div>
 
@@ -110,14 +130,36 @@ const Navbar = () => {
           >
             About
           </Link>
-          <Link
+          <div className="relative inline-block group ">
+            <p className="text-sm hover:bg-blue-700 py-2 px-4 rounded-md focus:outline-none flex items-center gap-2">
+              <span>All Product</span>
+              <RiArrowDropDownLine size={20} />
+            </p>
+            <div className="absolute left-0 hidden w-40 bg-gray-100 shadow-lg rounded-md group-hover:block z-50">
+              <Link
+                onClick={closeMenu}
+                href="/buy-product"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-300"
+              >
+                Buy Product
+              </Link>
+              <Link
+                onClick={closeMenu}
+                href="/rent-product"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-300"
+              >
+                Rent Product
+              </Link>
+            </div>
+          </div>
+          {/* <Link
             href="/products"
             passHref
             onClick={closeMenu}
             className="block text-sm hover:bg-blue-800 py-2 px-4 rounded-md"
           >
             All Product
-          </Link>
+          </Link> */}
           <Link
             href="/contact"
             passHref

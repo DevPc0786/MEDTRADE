@@ -18,7 +18,7 @@ const Footer = () => {
             >
               +91 8076603020
             </Link>
-            <p></p>
+            <p>Lal Kuan Gautambudh Nagar, Ghaziabad, Uttar Predesh</p>
             <p className="text-black flex gap-3 mt-5">
               <TiSocialFacebook />
               <IoLogoTwitter />
