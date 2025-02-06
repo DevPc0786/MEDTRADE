@@ -324,4 +324,21 @@ export const products = [
     ],
     images: "/img/sectionmachine.png",
   },
+  {
+    id: 27,
+    name: "Attended bed cum chair",
+    price: "9000",
+    dis_price: "9500",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "An attended bed cum chair is a multifunctional piece of furniture designed for patient care, commonly used in hospitals, clinics, and home healthcare settings. It serves as both a bed and a chair, allowing easy transition between sitting and lying positions.",
+    features: [
+      "Dual Functionality: Can be converted from a bed to a chair and vice versa.",
+      "Adjustable Backrest & Leg Rest: Enables customizable positioning for patient comfort.",
+      "Wheels with Brakes: Allows easy movement and locking for stability.",
+      "Side Rails: Provides safety and support for the patient.",
+    ],
+    images: "/img/attendedbedcum.png",
+  },
 ];
