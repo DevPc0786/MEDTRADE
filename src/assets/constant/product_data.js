@@ -356,7 +356,7 @@ export const products = [
       "Electric Fogger (Corded or Battery-Powered) - Ideal for indoor use.",
       "Portable and easy to use.",
     ],
-    images: "/img/Fogger-machine.jpg",
+    images: "/img/Fogger-machine.png",
   },
   {
     id: 29,
@@ -374,6 +374,6 @@ export const products = [
       "Suitable for indoor and outdoor use.",
       "Available in handheld, backpack, and trolley-mounted models.",
     ],
-    images: "/img/Fumigator-machine.jpg",
+    images: "/img/Fumigator-machine.png",
   },
 ];
