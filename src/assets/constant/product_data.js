@@ -341,4 +341,39 @@ export const products = [
     ],
     images: "/img/attendedbedcum.png",
   },
+  {
+    id: 28,
+    name: "Fogger machine",
+    price: "12000",
+    dis_price: "13000",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "Generally, a fogging machine is used to apply or spray certain chemicals in a fine mist. It is also utilized for fumigation, sanitization, insect control, and odor removal. Molds can also be removed using these machines.",
+    features: [
+      "Thermal Fogger: Uses heat to produce fine mist; ideal for insect control and outdoor use.",
+      "ULV (Ultra Low Volume) Cold Fogger: Uses air pressure to create fine mist; best for disinfection and indoor use.",
+      "Electric Fogger (Corded or Battery-Powered) - Ideal for indoor use.",
+      "Portable and easy to use.",
+    ],
+    images: "/img/Fogger-machine.jpg",
+  },
+  {
+    id: 29,
+    name: "Fumigator machine",
+    price: "7000",
+    dis_price: "8000",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "A fumigator machine is a device used to disperse disinfectants, pesticides, or insecticides in the form of fine mist or fog to sanitize and control pests in an enclosed area. It is widely used in hospitals, pharmaceutical industries, food processing units, and pest control applications.",
+    features: [
+      "Ranges from 1L to 10L or more, depending on the application size.",
+      "Converts liquid solutions into ultra-fine mist for effective penetration.",
+      "Available in thermal fogging (uses heat) and ULV cold fogging (uses air pressure).",
+      "Suitable for indoor and outdoor use.",
+      "Available in handheld, backpack, and trolley-mounted models.",
+    ],
+    images: "/img/Fumigator-machine.jpg",
+  },
 ];
