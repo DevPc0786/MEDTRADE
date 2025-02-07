@@ -324,4 +324,56 @@ export const products = [
     ],
     images: "/img/sectionmachine.png",
   },
+  {
+    id: 27,
+    name: "Attended bed cum chair",
+    price: "9000",
+    dis_price: "9500",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "An attended bed cum chair is a multifunctional piece of furniture designed for patient care, commonly used in hospitals, clinics, and home healthcare settings. It serves as both a bed and a chair, allowing easy transition between sitting and lying positions.",
+    features: [
+      "Dual Functionality: Can be converted from a bed to a chair and vice versa.",
+      "Adjustable Backrest & Leg Rest: Enables customizable positioning for patient comfort.",
+      "Wheels with Brakes: Allows easy movement and locking for stability.",
+      "Side Rails: Provides safety and support for the patient.",
+    ],
+    images: "/img/attendedbedcum.png",
+  },
+  {
+    id: 28,
+    name: "Fogger machine",
+    price: "12000",
+    dis_price: "13000",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "Generally, a fogging machine is used to apply or spray certain chemicals in a fine mist. It is also utilized for fumigation, sanitization, insect control, and odor removal. Molds can also be removed using these machines.",
+    features: [
+      "Thermal Fogger: Uses heat to produce fine mist; ideal for insect control and outdoor use.",
+      "ULV (Ultra Low Volume) Cold Fogger: Uses air pressure to create fine mist; best for disinfection and indoor use.",
+      "Electric Fogger (Corded or Battery-Powered) - Ideal for indoor use.",
+      "Portable and easy to use.",
+    ],
+    images: "/img/Fogger-machine.png",
+  },
+  {
+    id: 29,
+    name: "Fumigator machine",
+    price: "7000",
+    dis_price: "8000",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "A fumigator machine is a device used to disperse disinfectants, pesticides, or insecticides in the form of fine mist or fog to sanitize and control pests in an enclosed area. It is widely used in hospitals, pharmaceutical industries, food processing units, and pest control applications.",
+    features: [
+      "Ranges from 1L to 10L or more, depending on the application size.",
+      "Converts liquid solutions into ultra-fine mist for effective penetration.",
+      "Available in thermal fogging (uses heat) and ULV cold fogging (uses air pressure).",
+      "Suitable for indoor and outdoor use.",
+      "Available in handheld, backpack, and trolley-mounted models.",
+    ],
+    images: "/img/Fumigator-machine.png",
+  },
 ];
