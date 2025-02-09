@@ -376,4 +376,36 @@ export const products = [
     ],
     images: "/img/Fumigator-machine.png",
   },
+  {
+    id: 30,
+    name: "Crash cart",
+    price: "15000",
+    dis_price: "15500",
+    rating: "4.7",
+    option: "buy",
+    description:
+      "A crash cart is a mobile cart that contains medical equipment and drugs for treating patients experiencing sudden medical emergencies. Crash carts are used in hospitals to provide emergency care, especially for cardiac arrest. ",
+    features: [
+      "Epinephrine (for cardiac arrest and anaphylaxis)",
+      "Automated External Defibrillator (AED) or manual defibrillator",
+    ],
+    images: "/img/Crash-cart.png",
+  },
+  {
+    id: 31,
+    name: "Philips oxygen concentrator",
+    price: "58000",
+    dis_price: "59000",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "An oxygen concentrator is a medical device that provides oxygen-rich air to people who have trouble breathing. It works by removing nitrogen from the air and delivering the remaining oxygen to the patient.",
+    features: [
+      "Continuous Flow & Pulse Dose: Some models offer both delivery modes.",
+      "Flow Rate: Typically ranges from 0.5 to 10 LPM (liters per minute).",
+      "Molecular Sieve Beds: Ensures high oxygen concentration by removing nitrogen.",
+      "Durable Casing: Designed for continuous operation.",
+    ],
+    images: "/img/Philips-oxygen-concentrator.png",
+  },
 ];
