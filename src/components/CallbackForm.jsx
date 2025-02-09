@@ -10,14 +10,16 @@ const CallbackForm = ({
 }) => {
   const form = useRef();
 
-  const YOUR_SERVICE_ID = "";
-
+const YOUR_SERVICE_ID = "service_k5c4ve4";
+const YOUR_TEMPLATE_ID = "template_p2xfqxv";
+  const YOUR_PUBLIC_KEY = "PwVRsDa4N8r2BCFb2";
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_ox24v2v", "template_dwbuofn", form.current, {
-        publicKey: "jSH5Vc-W2JDsuqA-3",
+      .sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, {
+        publicKey: YOUR_PUBLIC_KEY,
       })
       .then(
         () => {
