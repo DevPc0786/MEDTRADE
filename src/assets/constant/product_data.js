@@ -408,4 +408,78 @@ export const products = [
     ],
     images: "/img/Philips-oxygen-concentrator.png",
   },
+
+  {
+    id: 32,
+    name: "Patient Shifter/ Folding Stretcher 2 fold",
+    price: "3000",
+    dis_price: "3500",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "A 2-fold folding stretcher is a lightweight and portable emergency transport device used for moving patients safely in hospitals, ambulances, and disaster response situations.",
+    features: [
+      "2-Fold Mechanism: Can be folded in half for easy storage and transport.",
+      "Compact & Lightweight: Makes it ideal for ambulances, hospitals, and disaster response.",
+      "Material: Made of high-strength aluminum alloy or stainless steel for durability.",
+      "Corrosion-Resistant: Ensures long-lasting use in various environments.",
+      "Waterproof & Fire-Resistant: Commonly made of PVC-coated nylon or oxford fabric.",
+    ],
+    images: "/img/Patient-Shifter.jpg",
+  },
+
+  {
+    id: 33,
+    name: "Stretcher Trolley MS with matttress",
+    price: "7000",
+    dis_price: "7200",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "A Stretcher Trolley (Mild Steel) with Mattress is a durable and versatile patient transport device used in hospitals, emergency rooms, and ambulances. It provides a stable and comfortable surface for moving patients efficiently.",
+    features: [
+      "Material: Made of mild steel (MS) with an epoxy powder-coated finish for durability and rust resistance.",
+      "Construction: Strong and stable frame designed for smooth patient transfer.",
+      "Material: High-density foam mattress with a waterproof, anti-bacterial, and easy-to-clean PVC or leatherette cover.",
+      "Castor Wheels: 4 heavy-duty swivel wheels (125-150mm) for easy movement.",
+    ],
+    images: "/img/Stretcher-Trolley.webp",
+  },
+
+  {
+    id: 34,
+    name: "Ambulance Stretcher with matttress",
+    price: "34000",
+    dis_price: "35000",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "An Ambulance Stretcher with Mattress is a specialized patient transport device designed for emergency medical services (EMS). It ensures safe and efficient transfer of patients in ambulances, hospitals, and emergency situations.",
+    features: [
+      "Made of high-strength aluminum alloy for lightweight durability.",
+      "Powder-coated or anodized finish for corrosion resistance.",
+      "Waterproof, fire-resistant, and easy-to-clean PU/PVC leather cover.",
+      "Height-adjustable for easy loading into ambulances.",
+    ],
+    images: "/img/Ambulance-Stretcher-with-matttress.jpg",
+  },
+
+  {
+    id: 35,
+    name: "Surgeon Stool with Cushioned Top and Wheels",
+    price: "1800",
+    dis_price: "1900",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "A Surgeon Stool with Cushioned Top and Wheels is a height-adjustable, mobile seating solution designed for use in operating rooms, clinics, and examination rooms. It provides comfort and flexibility for surgeons and medical professionals during procedures.",
+    features: [
+      "Mild Steel (MS) or Stainless Steel (SS) for strength and durability.",
+      "Corrosion-resistant and easy to clean.",
+      "High-density foam padding for comfort during long procedures.",
+      "Height range: 18 to 24 inches (varies by model).",
+      "360° swivel function for ease of movement.",
+    ],
+    images: "/img/Surgeon-Stool.png",
+  },
 ];
