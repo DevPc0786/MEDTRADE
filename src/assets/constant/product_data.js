@@ -376,4 +376,110 @@ export const products = [
     ],
     images: "/img/Fumigator-machine.png",
   },
+  {
+    id: 30,
+    name: "Crash cart",
+    price: "15000",
+    dis_price: "15500",
+    rating: "4.7",
+    option: "buy",
+    description:
+      "A crash cart is a mobile cart that contains medical equipment and drugs for treating patients experiencing sudden medical emergencies. Crash carts are used in hospitals to provide emergency care, especially for cardiac arrest. ",
+    features: [
+      "Epinephrine (for cardiac arrest and anaphylaxis)",
+      "Automated External Defibrillator (AED) or manual defibrillator",
+    ],
+    images: "/img/Crash-cart.png",
+  },
+  {
+    id: 31,
+    name: "Philips oxygen concentrator",
+    price: "58000",
+    dis_price: "59000",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "An oxygen concentrator is a medical device that provides oxygen-rich air to people who have trouble breathing. It works by removing nitrogen from the air and delivering the remaining oxygen to the patient.",
+    features: [
+      "Continuous Flow & Pulse Dose: Some models offer both delivery modes.",
+      "Flow Rate: Typically ranges from 0.5 to 10 LPM (liters per minute).",
+      "Molecular Sieve Beds: Ensures high oxygen concentration by removing nitrogen.",
+      "Durable Casing: Designed for continuous operation.",
+    ],
+    images: "/img/Philips-oxygen-concentrator.png",
+  },
+
+  {
+    id: 32,
+    name: "Patient Shifter/ Folding Stretcher 2 fold",
+    price: "3000",
+    dis_price: "3500",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "A 2-fold folding stretcher is a lightweight and portable emergency transport device used for moving patients safely in hospitals, ambulances, and disaster response situations.",
+    features: [
+      "2-Fold Mechanism: Can be folded in half for easy storage and transport.",
+      "Compact & Lightweight: Makes it ideal for ambulances, hospitals, and disaster response.",
+      "Material: Made of high-strength aluminum alloy or stainless steel for durability.",
+      "Corrosion-Resistant: Ensures long-lasting use in various environments.",
+      "Waterproof & Fire-Resistant: Commonly made of PVC-coated nylon or oxford fabric.",
+    ],
+    images: "/img/Patient-Shifter.jpg",
+  },
+
+  {
+    id: 33,
+    name: "Stretcher Trolley MS with matttress",
+    price: "7000",
+    dis_price: "7200",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "A Stretcher Trolley (Mild Steel) with Mattress is a durable and versatile patient transport device used in hospitals, emergency rooms, and ambulances. It provides a stable and comfortable surface for moving patients efficiently.",
+    features: [
+      "Material: Made of mild steel (MS) with an epoxy powder-coated finish for durability and rust resistance.",
+      "Construction: Strong and stable frame designed for smooth patient transfer.",
+      "Material: High-density foam mattress with a waterproof, anti-bacterial, and easy-to-clean PVC or leatherette cover.",
+      "Castor Wheels: 4 heavy-duty swivel wheels (125-150mm) for easy movement.",
+    ],
+    images: "/img/Stretcher-Trolley.webp",
+  },
+
+  {
+    id: 34,
+    name: "Ambulance Stretcher with matttress",
+    price: "34000",
+    dis_price: "35000",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "An Ambulance Stretcher with Mattress is a specialized patient transport device designed for emergency medical services (EMS). It ensures safe and efficient transfer of patients in ambulances, hospitals, and emergency situations.",
+    features: [
+      "Made of high-strength aluminum alloy for lightweight durability.",
+      "Powder-coated or anodized finish for corrosion resistance.",
+      "Waterproof, fire-resistant, and easy-to-clean PU/PVC leather cover.",
+      "Height-adjustable for easy loading into ambulances.",
+    ],
+    images: "/img/Ambulance-Stretcher-with-matttress.jpg",
+  },
+
+  {
+    id: 35,
+    name: "Surgeon Stool with Cushioned Top and Wheels",
+    price: "1800",
+    dis_price: "1900",
+    rating: "4.6",
+    option: "buy",
+    description:
+      "A Surgeon Stool with Cushioned Top and Wheels is a height-adjustable, mobile seating solution designed for use in operating rooms, clinics, and examination rooms. It provides comfort and flexibility for surgeons and medical professionals during procedures.",
+    features: [
+      "Mild Steel (MS) or Stainless Steel (SS) for strength and durability.",
+      "Corrosion-resistant and easy to clean.",
+      "High-density foam padding for comfort during long procedures.",
+      "Height range: 18 to 24 inches (varies by model).",
+      "360° swivel function for ease of movement.",
+    ],
+    images: "/img/Surgeon-Stool.png",
+  },
 ];
