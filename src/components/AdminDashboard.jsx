@@ -7,6 +7,7 @@ const AdminDashboard = () => {
     price: "",
     disPrice: "",
     option: "",
+    rating: "",
     features: [],
     description: "",
   });
@@ -49,6 +50,7 @@ const AdminDashboard = () => {
       name: formData.title,
       price: formData.price,
       dis_price: formData.disPrice,
+      rating: formData.rating,
       option: formData.option,
       features: JSON.stringify(formData.features), // Convert array to string
       description: formData.description,
@@ -70,6 +72,7 @@ const AdminDashboard = () => {
         setFormData({
           img: "",
           title: "",
+          rating: "",
           price: "",
           disPrice: "",
           option: "",
@@ -153,18 +156,33 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Option
-          </label>
-          <input
-            type="text"
-            name="option"
-            value={formData.option}
-            onChange={handleInputChange}
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter product options"
-          />
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Option
+            </label>
+            <input
+              type="text"
+              name="option"
+              value={formData.option}
+              onChange={handleInputChange}
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter product options"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Rating
+            </label>
+            <input
+              type="text"
+              name="rating"
+              value={formData.rating}
+              onChange={handleInputChange}
+              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter product options"
+            />
+          </div>
         </div>
 
         <div>
