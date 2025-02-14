@@ -1,5 +1,5 @@
 import React from 'react'
-import AdminLoginForm from '../../../components/AdminLoginForm'
+import AdminLoginForm from '@/components/AdminLoginForm'
 
 const index = () => {
   return (

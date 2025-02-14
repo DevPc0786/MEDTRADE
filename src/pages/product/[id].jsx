@@ -1,41 +1,66 @@
 import { useRouter } from "next/router";
-import { products } from "../../assets/constant/product_data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CallbackForm from "@/components/CallbackForm";
 
 export default function UserDetails() {
-    const [model, setModel] = useState(false);
-  
-    const [selectedProduct, setSelectedProduct] = useState({name: "", price: 0}); // State to store the selected product name
-  
-    const handleProductSelect = (productName, productPrice) => {
-      setSelectedProduct({ name: productName, price: productPrice }); // Set the selected product name
-      setModel(true); // Open the modal
+    const router = useRouter();
+  const { id } = router.query; // Get ID from the URL
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [model, setModel] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState({
+    name: "",
+    price: 0,
+  }); // State to store the selected product name
+
+
+  const closeModel = () => {
+    setModel(false);
+    console.log("close model");
   };
 
-    const closeModel = () => {
-      setModel(false);
-      console.log("close model");
-    };
-  
-  const router = useRouter();
-  const { id } = router.query;
+  const handleProductSelect = (productName, productPrice, productOption) => {
+    setSelectedProduct({
+      name: productName,
+      price: productPrice,
+      option: productOption,
+    }); // Set the selected product name
+    setModel(true); // Open the modal
+  };
+  useEffect(() => {
+    if (!id) return; // Prevent fetching if ID is not available
 
-  // Find the user by id
-  const user = products.find((u) => u.id === parseInt(id));
+    fetch("http://medtrade.in/api.php")
+      .then((response) => response.json())
+      .then((result) => {
+        if (result.success) {
+          const foundUser = result.users.find((u) => u.id === id);
+          if (foundUser) {
+            setUser(foundUser);
+          } else {
+            setError("User not found");
+          }
+        } else {
+          setError("Failed to fetch data");
+        }
+      })
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
+  }, [id]);
 
-  if (!user) {
-    return <h1>Page not found</h1>;
-  }
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+  if (!user) return <p>No user found</p>;
 
   return (
     <div style={{ padding: "20px" }}>
+   
       <div className="lg:flex lg:justify-between">
         <div className="w-full">
           <img
             className="object-cover w-52 m-auto"
-            src={user.images}
-            alt="product image"
+            src={user.images} alt={user.name}
           />
         </div>
         <div className="w-full">
@@ -54,23 +79,15 @@ export default function UserDetails() {
 
           <div className="my-5">
             <h2>Features</h2>
-            {user.features.length > 0 ? (
-              <div>
-                {user.features.map((feature, index) => (
-                  <li key={index} className="text-sm text-gray-500">
-                    {feature}
-                  </li>
-                ))}
-              </div>
-            ) : (
-              <p className="text-sm text-gray-500">Not Available</p>
-            )}
+            {JSON.parse(user.features).map((feature, index) => (
+          <li key={index} className="text-sm text-gray-500" >{feature}</li>
+        ))}
           </div>
 
           <div>
             <h2>Description</h2>
             {user.description.length > 0 ? (
-              <p className="text-sm text-gray-500">{user.description}</p>
+              <p className="text-sm text-gray-500">{user.description || "Not Available"}</p>
             ) : (
               <p className="text-sm text-gray-500">Not Available</p>
             )}

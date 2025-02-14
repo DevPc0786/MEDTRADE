@@ -12,6 +12,8 @@ const AdminDashboard = () => {
   });
 
   const [currentFeature, setCurrentFeature] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -38,18 +40,59 @@ const AdminDashboard = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+    setLoading(true);
+    setMessage("");
+
+    const postData = {
+      name: formData.title,
+      price: formData.price,
+      dis_price: formData.disPrice,
+      option: formData.option,
+      features: JSON.stringify(formData.features), // Convert array to string
+      description: formData.description,
+      images: formData.img,
+    };
+
+    try {
+      const response = await fetch("http://medtrade.in/api.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(postData),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setMessage("Product added successfully!");
+        setFormData({
+          img: "",
+          title: "",
+          price: "",
+          disPrice: "",
+          option: "",
+          features: [],
+          description: "",
+        });
+      } else {
+        setMessage("Failed to add product.");
+      }
+    } catch (error) {
+      setMessage("Error submitting form.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="max-w-3xl mt-3 mx-auto p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-6 text-gray-800">Add New Product</h2>
 
+      {message && <p className="text-center text-green-600">{message}</p>}
+
       <form onSubmit={handleSubmit} className="space-y-4">
-        {/* Image URL */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Image URL
@@ -61,10 +104,10 @@ const AdminDashboard = () => {
             onChange={handleInputChange}
             className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter image URL"
+            required
           />
         </div>
 
-        {/* Title */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Title
@@ -80,7 +123,6 @@ const AdminDashboard = () => {
           />
         </div>
 
-        {/* Price and Discount Price */}
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -111,7 +153,6 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        {/* Option */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Option
@@ -122,11 +163,10 @@ const AdminDashboard = () => {
             value={formData.option}
             onChange={handleInputChange}
             className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter product options (comma separated)"
+            placeholder="Enter product options"
           />
         </div>
 
-        {/* Features */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Features
@@ -144,7 +184,7 @@ const AdminDashboard = () => {
               onClick={handleAddFeature}
               className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
             >
-              Add Feature
+              Add
             </button>
           </div>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -166,7 +206,6 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        {/* Description */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Description
@@ -182,12 +221,12 @@ const AdminDashboard = () => {
           />
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
           className="w-full py-2 px-4 font-bold bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors"
+          disabled={loading}
         >
-          Add Product
+          {loading ? "Adding Product..." : "Add Product"}
         </button>
       </form>
     </div>
