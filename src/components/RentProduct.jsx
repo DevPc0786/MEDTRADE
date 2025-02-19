@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import CallbackForm from "./CallbackForm";
 
-const RentProduct = () => {const [data, setData] = useState([]);
+const RentProduct = () => {
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -23,7 +24,7 @@ const RentProduct = () => {const [data, setData] = useState([]);
       })
       .then((data) => {
         if (data.success) {
-          setData(data.users);
+          setData(data.products);
         }
       })
       .catch((error) => {

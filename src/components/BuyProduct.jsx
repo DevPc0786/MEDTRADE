@@ -1,61 +1,57 @@
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import { products } from "@/assets/constant/product_data";
-import ProductCard from './ProductCard';
-import CallbackForm from './CallbackForm';
-
+import ProductCard from "./ProductCard";
+import CallbackForm from "./CallbackForm";
 
 const BuyProduct = () => {
-     const [model, setModel] = useState(false);
-        const [selectedProduct, setSelectedProduct] = useState({name: "", price: 0}); // State to store the selected product name
-       const [data, setData] = useState([]);
-        const [loading, setLoading] = useState(true);
-        const [error, setError] = useState(null);
-      
+  const [model, setModel] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState({
+    name: "",
+    price: 0,
+  }); // State to store the selected product name
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-        useEffect (() => {
-          fetch("http://medtrade.in/api.php")
-            .then((response) => {
-              if (!response.ok) {
-                throw new Error("Network response was not ok");
-              }
-              return response.json();
-            })
-            .then((data) => {
-              if (data.success) {
-                setData(data.users);
-              }
-            })
-            .catch((error) => {
-              setError(error.message);
-            })
-            .finally(() => {
-              setLoading(false);
-            });
-        }, []);
-      
-        if (loading) return <p>Loading...</p>;
-        if (error) return <p>Error: {error}</p>;
-      
-    
-      const handleProductSelect = (
-        productName,
-        productPrice,
-        productOption
-      ) => {
-        setSelectedProduct({
-          name: productName,
-          price: productPrice,
-          option: productOption,
-        }); // Set the selected product name
-        setModel(true); // Open the modal
-      };
+  useEffect(() => {
+    fetch("http://medtrade.in/api.php")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        if (data.success) {
+          setData(data.products);
+        }
+      })
+      .catch((error) => {
+        setError(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
 
-     const closeModel = () => {
-       setModel(false);
-       console.log("close model");
-     };
-    
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+
+  const handleProductSelect = (productName, productPrice, productOption) => {
+    setSelectedProduct({
+      name: productName,
+      price: productPrice,
+      option: productOption,
+    }); // Set the selected product name
+    setModel(true); // Open the modal
+  };
+
+  const closeModel = () => {
+    setModel(false);
+    console.log("close model");
+  };
+
   return (
     <div>
       <div className="flex justify-between">
@@ -90,6 +86,6 @@ const BuyProduct = () => {
       )}
     </div>
   );
-}
+};
 
-export default BuyProduct
+export default BuyProduct;

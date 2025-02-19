@@ -32,7 +32,7 @@ const Dashboard = () => {
       })
       .then((data) => {
         if (data.success) {
-          setData(data.users);
+          setData(data.products);
         }
       })
       .catch((error) => {

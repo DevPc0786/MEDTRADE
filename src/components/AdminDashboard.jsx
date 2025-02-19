@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const AdminDashboard = () => {
   const [formData, setFormData] = useState({
-    img: "",
+    img: null,
     title: "",
     price: "",
     disPrice: "",
@@ -21,6 +21,13 @@ const AdminDashboard = () => {
     setFormData((prev) => ({
       ...prev,
       [name]: value,
+    }));
+  };
+
+  const handleImageChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      img: e.target.files[0], // Save file instead of string
     }));
   };
 
@@ -46,31 +53,29 @@ const AdminDashboard = () => {
     setLoading(true);
     setMessage("");
 
-    const postData = {
-      name: formData.title,
-      price: formData.price,
-      dis_price: formData.disPrice,
-      rating: formData.rating,
-      option: formData.option,
-      features: JSON.stringify(formData.features), // Convert array to string
-      description: formData.description,
-      images: formData.img,
-    };
+    const formDataToSend = new FormData();
+    formDataToSend.append("name", formData.title);
+    formDataToSend.append("price", formData.price);
+    formDataToSend.append("dis_price", formData.disPrice);
+    formDataToSend.append("rating", formData.rating);
+    formDataToSend.append("option", formData.option);
+    formDataToSend.append("features", JSON.stringify(formData.features));
+    formDataToSend.append("description", formData.description);
+    if (formData.img) {
+      formDataToSend.append("images", formData.img); // Append the file
+    }
 
     try {
       const response = await fetch("http://medtrade.in/api.php", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(postData),
+        body: formDataToSend, // Send FormData instead of JSON
       });
 
       const result = await response.json();
       if (result.success) {
         setMessage("Product added successfully!");
         setFormData({
-          img: "",
+          img: null,
           title: "",
           rating: "",
           price: "",
@@ -98,15 +103,13 @@ const AdminDashboard = () => {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            Image URL
+            Image Upload
           </label>
           <input
             type="file"
             name="img"
-            value={formData.img}
-            onChange={handleInputChange}
+            onChange={handleImageChange}
             className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter image URL"
             required
           />
         </div>
@@ -180,7 +183,7 @@ const AdminDashboard = () => {
               value={formData.rating}
               onChange={handleInputChange}
               className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter product options"
+              placeholder="Enter rating"
             />
           </div>
         </div>
