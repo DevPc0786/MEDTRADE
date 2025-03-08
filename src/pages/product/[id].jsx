@@ -42,7 +42,7 @@ export default function UserDetails() {
             setError("User not found");
           }
         } else {
-          setError("Failed to fetch data");
+          setError("Failed to fetch data ");
         }
       })
       .catch((err) => setError(err.message))
