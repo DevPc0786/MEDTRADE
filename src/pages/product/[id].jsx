@@ -39,7 +39,7 @@ export default function UserDetails() {
           if (foundUser) {
             setUser(foundUser);
           } else {
-            setError("User not found ");
+            setError("User not found");
           }
         } else {
           setError("Failed to fetch data ");
