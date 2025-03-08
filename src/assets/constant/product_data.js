@@ -53,9 +53,9 @@ export const products = [
   },
   {
     id: 5,
-    name: "Vitamin C Tablet",
-    price: "180",
-    dis_price: "210",
+    name: "Ventilator Oxygen Sensor",
+    price: "4500",
+    dis_price: "4600",
     rating: "4.4",
     option: "buy",
     description: "",
@@ -64,7 +64,7 @@ export const products = [
   },
   {
     id: 6,
-    name: "Antacid Syrup",
+    name: "Neonatal Skin Temperature Probes",
     price: "130",
     dis_price: "150",
     rating: "4.2",
@@ -72,7 +72,7 @@ export const products = [
     description: "",
     features: [],
     images:
-      "https://images.apollo247.in/pub/media/catalog/product/a/p/apa0017_1-sep2023_1_.jpg",
+      "/img/SkinTemp.png",
   },
   {
     id: 7,
