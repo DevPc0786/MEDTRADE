@@ -42,7 +42,7 @@ export default function UserDetails() {
             setError("User not found");
           }
         } else {
-          setError("Failed to fetch data");
+          setError("Failed to fetch data ");
         }
       })
       .catch((err) => setError(err.message))
@@ -56,7 +56,7 @@ export default function UserDetails() {
   return (
     <div style={{ padding: "20px" }}>
    
-      <div className="lg:flex lg:justify-between  ">
+      <div className="lg:flex lg:justify-between">
         <div className="w-full">
           <img
             className="object-cover w-52 m-auto"
