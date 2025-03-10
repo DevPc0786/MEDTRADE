@@ -51,7 +51,7 @@ export default function UserDetails() {
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
-  if (!user) return <p>No user found</p>;
+  if (!user) return <p>No user found!</p>;
 
   return (
     <div style={{ padding: "20px" }}>
@@ -59,7 +59,7 @@ export default function UserDetails() {
       <div className="lg:flex lg:justify-between">
         <div className="w-full">
           <img
-            className="object-cover w-52 m-auto"
+            className="object-cover w-52 m-auto "
             src={user.images} alt={user.name}
           />
         </div>
