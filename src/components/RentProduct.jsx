@@ -1,16 +1,42 @@
 import Link from "next/link";
-import React, { useState } from "react";
-import { products } from "@/assets/constant/product_data";
+import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import CallbackForm from "./CallbackForm";
 
 const RentProduct = () => {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   const [model, setModel] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState({
     name: "",
     price: 0,
-    option: "",
   }); // State to store the selected product name
+
+  useEffect(() => {
+    fetch("http://medtrade.in/api.php")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        if (data.success) {
+          setData(data.products);
+        }
+      })
+      .catch((error) => {
+        setError(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   const handleProductSelect = (productName, productPrice, productOption) => {
     setSelectedProduct({
@@ -40,7 +66,7 @@ const RentProduct = () => {
         </Link> */}
       </div>
       <div className="grid grid-cols-2 gap-2 mx-2  lg:grid-cols-3 xl:grid-cols-5">
-        {products
+        {data
           .filter((item) => item.option === "rent") // Filter products with option "buy"
           .map((item, i) => (
             <ProductCard
