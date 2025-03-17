@@ -13,7 +13,7 @@ const index = () => {
         <p>
           <Link
             href="/"
-            className="text-white px-5 py-2 font-bold bg-[#2563eb] rounded-lg"
+            className="text-white px-5 py-3 font-bold bg-[#2563eb] rounded-md "
           >
             Go back Home
           </Link>
