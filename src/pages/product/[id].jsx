@@ -89,30 +89,62 @@ export default function ProductDetails() {
           </p>
 
           <div className="my-5">
-            <h2>Features</h2>
+            <h2 className="text-lg font-semibold text-gray-900 mb-3">Features</h2>
             {product.features ? (
               (() => {
                 try {
-                  // Parse JSON string into an array
-                  const featuresArray = JSON.parse(product.features);
+                  // Clean up the string by removing extra backslashes and quotes
+                  const cleanedString = product.features
+                    .replace(/^"|"$/g, '') // Remove outer quotes
+                    .replace(/\\"/g, '"')  // Replace escaped quotes with regular quotes
+                    .replace(/\\/g, '');   // Remove remaining backslashes
+
+                  // Parse the cleaned string
+                  const featuresArray = JSON.parse(cleanedString);
 
                   // Check if it's an array, then display as a list
                   return Array.isArray(featuresArray) ? (
-                    <ul className="list-disc list-inside text-gray-500">
+                    <ul className="space-y-2">
                       {featuresArray.map((feature, index) => (
-                        <li key={index} className="text-sm">{feature}</li>
+                        <li key={index} className="flex items-start">
+                          <svg className="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="text-gray-700">{feature}</span>
+                        </li>
                       ))}
                     </ul>
                   ) : (
-                    <p className="text-sm text-gray-500">{product.features}</p>
+                    <p className="text-gray-700">{product.features}</p>
                   );
                 } catch (error) {
                   console.error("JSON Parsing Error:", error);
-                  return <p className="text-sm text-gray-500">{product.features}</p>;
+                  // If parsing fails, try to display the raw string
+                  const rawFeatures = product.features
+                    .replace(/^"|"$/g, '') // Remove outer quotes
+                    .replace(/\\"/g, '"')  // Replace escaped quotes with regular quotes
+                    .replace(/\\/g, '')    // Remove remaining backslashes
+                    .replace(/^\[|\]$/g, '') // Remove square brackets
+                    .split(',')            // Split by commas
+                    .map(f => f.trim())    // Trim whitespace
+                    .filter(f => f);       // Remove empty strings
+
+                  return (
+                    <ul className="space-y-2">
+                      {rawFeatures.map((feature, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg className="h-5 w-5 text-green-500 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="text-gray-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  );
                 }
               })()
             ) : (
-              <p className="text-sm text-gray-500">No features available</p>
+              <p className="text-gray-500 italic">No features available</p>
             )}
           </div>
 
