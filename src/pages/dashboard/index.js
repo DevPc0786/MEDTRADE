@@ -1,11 +1,14 @@
 import AdminDashboard from '@/components/AdminDashboard'
 import React from 'react'
+import ProtectedRoute from '@/components/ProtectedRoute'
 
 const index = () => {
   return (
-    <div>
-      <AdminDashboard />
-    </div>
+    <ProtectedRoute>
+      <div>
+        <AdminDashboard />
+      </div>
+    </ProtectedRoute>
   )
 }
 
